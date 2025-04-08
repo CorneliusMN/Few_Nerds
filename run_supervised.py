@@ -127,7 +127,6 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
                       "labels": batch[3]}
             outputs = model(**inputs)
             loss = outputs[0]  # model outputs are always tuple in pytorch-transformers (see doc)
-
             if args.n_gpu > 1:
                 loss = loss.mean()  # mean() to average on multi-gpu parallel training
             if args.gradient_accumulation_steps > 1:
@@ -154,7 +153,10 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
 
                 if args.local_rank in [-1, 0] and args.logging_steps > 0 and global_step % args.logging_steps == 0:
                     # Log metrics
-                    if args.local_rank == -1 and args.evaluate_during_training:  # Only evaluate when single GPU otherwise metrics may not average well
+                    if args.local_rank == -1 and args.evaluate_during_training: # Only evaluate when single GPU otherwise metrics may not average well
+                        with open("output.txt", "a", encoding = "utf-8") as writer:
+                            writer.write(f"Number of sentences: {(step+1)*(args.train_batch_size)}\n")
+                            writer.write("\n")
                         results, _ = evaluate(args, model, tokenizer, labels, pad_token_label_id, mode="dev")
                         if results["f1"] > best_metric:
                             best_metric = results["f1"]
@@ -255,6 +257,10 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
     logger.info("***** Eval results %s *****", prefix)
     for key in sorted(results.keys()):
         logger.info("  %s = %s", key, str(results[key]))
+    with open("output.txt", "a", encoding = "utf-8") as writer:
+        for key in sorted(results.keys()):
+            writer.write("{} = {}\n".format(key, str(results[key])))
+            writer.write("\n")
 
     return results, preds_list
 
@@ -514,6 +520,7 @@ def main():
 
     return results
 
-
 if __name__ == "__main__":
     main()
+
+# python3 run_supervised.py --data_dir sup --model_type bert --model_name_or_path bert-base-uncased --output_dir supervised_output --do_train --do_eval --evaluate_during_training  --logging_steps 20 --save_steps 500000 --labels data_conll/labels.txt --do_lower_case --overwrite_cache --overwrite_output_dir
