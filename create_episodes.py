@@ -18,7 +18,7 @@ class DummyTokenizer:
         return tokens
 
 def read_allowed_labels(labels_file):
-    with open(labels_file, "r", encoding="utf-8") as f:
+    with open(labels_file, "r", encoding = "utf-8") as f:
         labels = [line.strip() for line in f if line.strip()]
     return labels
 
@@ -61,6 +61,8 @@ def main():
                         help = "Maximum sequence length (kept for compatibility)") # Not really used here
     parser.add_argument("--seed", type = int, default = 0,
                         help = "Random seed for reproducibility")
+    parser.add_argument("--label_prefix", type = str, default = "person-",
+                    help = "Prefix to filter allowed labels (e.g., 'person-')")
     args = parser.parse_args()
 
     Q = args.K
@@ -70,8 +72,8 @@ def main():
     torch.manual_seed(args.seed)
 
     allowed_labels = read_allowed_labels(args.labels_file)
-    allowed_labels = [label for label in allowed_labels if label.startswith("person-")]
-    print("Allowed labels from {}:".format(args.labels_file))
+    allowed_labels = [label for label in allowed_labels if label.startswith(args.label_prefix)]
+    print("Allowed labels (filtered with prefix '{}') from {}:".format(args.label_prefix, args.labels_file))
     print(allowed_labels)
 
     # Use the DummyTokenizer instead of a real tokenizer
@@ -117,6 +119,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Example of how to run:
+# python3 create_episodes.py --data_file data/inter/all.txt --labels_file data/labels.txt --N 2 --K 2 --num_episodes 20 --max_length 100 --output_file episodes_trial.jsonl
 
 # Example of how to run:
 # python3 create_episodes.py --data_file data/inter/all.txt --labels_file data/labels.txt --N 2 --K 2 --num_episodes 20 --max_length 100 --output_file episodes_trial.jsonl
