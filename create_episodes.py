@@ -61,8 +61,11 @@ def main():
                         help = "Maximum sequence length (kept for compatibility)") # Not really used here
     parser.add_argument("--seed", type = int, default = 0,
                         help = "Random seed for reproducibility")
-    parser.add_argument("--label_prefix", type = str, default = "person-",
-                    help = "Prefix to filter allowed labels (e.g., 'person-')")
+    #parser.add_argument("--label_prefix", type = str, default = "person-",
+    #                help = "Prefix to filter allowed labels (e.g., 'person-')")
+    parser.add_argument("--label_prefixes", nargs="+", type=str, default=["person-"],
+                    help="List of prefixes to filter allowed labels (e.g., 'person-' 'location-')")
+
     args = parser.parse_args()
 
     Q = args.K
@@ -72,8 +75,11 @@ def main():
     torch.manual_seed(args.seed)
 
     allowed_labels = read_allowed_labels(args.labels_file)
-    allowed_labels = [label for label in allowed_labels if label.startswith(args.label_prefix)]
-    print("Allowed labels (filtered with prefix '{}') from {}:".format(args.label_prefix, args.labels_file))
+    #allowed_labels = [label for label in allowed_labels if label.startswith(args.label_prefix)]
+    #print("Allowed labels (filtered with prefix '{}') from {}:".format(args.label_prefix, args.labels_file))
+    allowed_labels = [label for label in allowed_labels 
+                  if any(label.startswith(prefix) for prefix in args.label_prefixes)]
+    print("Allowed labels (filtered with prefix '{}') from {}:".format(args.label_prefixes, args.labels_file))
     print(allowed_labels)
 
     # Use the DummyTokenizer instead of a real tokenizer
