@@ -115,7 +115,9 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
     model.zero_grad()
     train_iterator = trange(int(args.num_train_epochs), desc="Epoch", disable=args.local_rank not in [-1, 0])
     set_seed(args)  # Added here for reproductibility (even between python 2 and 3)
-    for _ in train_iterator:
+    for epoch in train_iterator:
+        with open("output.txt", "a", encoding="utf-8") as writer:
+            writer.write(f"Epoch number: {epoch}\n")
         epoch_iterator = tqdm(train_dataloader, desc="Iteration", disable=args.local_rank not in [-1, 0])
         for step, batch in enumerate(epoch_iterator):
             model.train()
@@ -156,6 +158,7 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
                     if args.local_rank == -1 and args.evaluate_during_training: # Only evaluate when single GPU otherwise metrics may not average well
                         with open("output.txt", "a", encoding = "utf-8") as writer:
                             writer.write(f"Number of sentences: {(step+1)*(args.train_batch_size)}\n")
+                            writer.write(f"Step: {step}")
                             writer.write("\n")
                         results, _ = evaluate(args, model, tokenizer, labels, pad_token_label_id, mode="dev")
                         if results["f1"] > best_metric:
