@@ -3,11 +3,6 @@ import os
 import argparse
 
 def process_json_lines(file1, file2):
-    """
-    Processes two JSONL files line by line.
-    - Merges "support" data from both files.
-    - Extracts "query" data only from the second file.
-    """
     support_sentences = []
     query_sentences = []
     with open(file1, "r", encoding="utf-8") as f1, open(file2, "r", encoding="utf-8") as f2:
@@ -20,12 +15,10 @@ def process_json_lines(file1, file2):
                 continue
             data1 = json.loads(line1)
             support_list = []
-            # Extract "support" from the first file
             if "support" in data1:
                 words_list = data1["support"].get("word", [])
                 labels_list = data1["support"].get("label", [[]] * len(words_list))
                 support_list.extend(zip(words_list, labels_list))
-            # If there is a corresponding line in the second file, merge its "support" and extract "query"
             if i < len2:
                 line2 = lines2[i].strip()
                 if line2:
@@ -42,7 +35,7 @@ def process_json_lines(file1, file2):
     return support_sentences, query_sentences
 
 def save_sentences(sentences, output_filename):
-    """Saves sentences to a file in BIO format."""
+    os.makedirs(os.path.dirname(output_filename), exist_ok=True)
     with open(output_filename, "w", encoding="utf-8") as f:
         for words, bio_labels in sentences:
             for token, label in zip(words, bio_labels):
@@ -50,28 +43,28 @@ def save_sentences(sentences, output_filename):
             f.write("\n")
 
 def main():
-    """
-    Accepts two JSONL input files and processes them as described.
-    """
     parser = argparse.ArgumentParser(description="Process two JSONL files and merge support data while extracting query data.")
     parser.add_argument('input_file1', help="First input JSONL file.")
     parser.add_argument('input_file2', help="Second input JSONL file.")
+    parser.add_argument('--output_dir', default="output", help="Directory to save output files. Default is './output'")
     args = parser.parse_args()
+
     file1, file2 = args.input_file1, args.input_file2
+    output_dir = args.output_dir
+
     if not os.path.exists(file1) or not os.path.exists(file2):
         print("One or both input files not found.")
         return
-    support_output_filename = "train.txt"
-    query_output_filename = "dev.txt"
+
+    support_output_filename = os.path.join(output_dir, "train.txt")
+    query_output_filename = os.path.join(output_dir, "dev.txt")
+
     support_sentences, query_sentences = process_json_lines(file1, file2)
     save_sentences(support_sentences, support_output_filename)
     save_sentences(query_sentences, query_output_filename)
-    print(f"Saved {len(support_sentences)} support sentences with BIO labels to {support_output_filename}")
-    print(f"Saved {len(query_sentences)} query sentences with BIO labels to {query_output_filename}")
+
+    print(f"Saved {len(support_sentences)} train sentences to {support_output_filename}")
+    print(f"Saved {len(query_sentences)} dev sentences to {query_output_filename}")
 
 if __name__ == "__main__":
     main()
-
-# python3 merge_and_convert_to_supervised.py train_art_2_1.jsonl test_art_2_1.jsonl
-
-# VERY IMPORTANT to give the train first and test second
