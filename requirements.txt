@@ -1,7 +1,22 @@
-nltk>=3.6.4
-numpy==1.22.0
-torch==1.7.1
-transformers==4.0.1
-apex==0.9.10dev
-scikit_learn==0.24.1
+# nltk>=3.6.4
+# numpy==1.22.0
+# torch==1.7.1
+# transformers==4.0.1
+# apex==0.9.10dev
+# scikit-learn==0.24.1
+# seqeval
+
+python=3.9
+numpy=1.24
+scikit-learn=1.2
+nltk
+tqdm
+regex
+sentencepiece
+libstdcxx-ng>=11.2.0
+torch==1.13.1
+torchvision==0.14.1
+torchaudio==0.13.1
+transformers==4.26.1
+tokenizers==0.13.2
 seqeval
