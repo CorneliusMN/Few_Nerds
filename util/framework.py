@@ -393,6 +393,26 @@ class FewShotNERFramework:
         it = 0
         while it + 1 < train_iter:
             for _, (support, query) in enumerate(self.train_data_loader):
+                support_sentence_counts = support.get("sentence_num", None)
+                support_total = 0
+                if support_sentence_counts is not None:
+                    if isinstance(support_sentence_counts, torch.Tensor):
+                        support_total = support_sentence_counts.sum().item()
+                    else:
+                        support_total = sum(support_sentence_counts)
+                
+                # Compute sentence counts for query
+                query_sentence_counts = query.get("sentence_num", None)
+                query_total = 0
+                if query_sentence_counts is not None:
+                    if isinstance(query_sentence_counts, torch.Tensor):
+                        query_total = query_sentence_counts.sum().item()
+                    else:
+                        query_total = sum(query_sentence_counts)
+                # Combine both support and query sentence counts
+                total_batch_sentences = support_total + query_total
+                with open("output_proto.txt", "a", encoding = "utf-8") as writer:
+                        writer.write(f"Number of sentences: {total_batch_sentences}\n\n")
                 label = torch.cat(query['label'], 0)
                 if torch.cuda.is_available():
                     for k in support:
@@ -427,6 +447,10 @@ class FewShotNERFramework:
                     precision = correct_cnt / pred_cnt
                     recall = correct_cnt / label_cnt
                     f1 = 2 * precision * recall / (precision + recall)
+                    with open("output_proto.txt", "a", encoding = "utf-8") as writer:
+                        writer.write(f"f1: {f1}\n\n")
+                        writer.write(f"precision: {precision}\n\n")
+                        writer.write(f"recall: {recall}\n\n")
                     sys.stdout.write('step: {0:4} | loss: {1:2.6f} | [ENTITY] precision: {2:3.4f}, recall: {3:3.4f}, f1: {4:3.4f}'\
                         .format(it + 1, iter_loss/ iter_sample, precision, recall, f1) + '\r')
                 sys.stdout.flush()
