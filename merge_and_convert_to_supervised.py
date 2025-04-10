@@ -68,3 +68,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#python merge_and_convert_to_supervised.py train_n_k.jsonl test_n_k.jsonl -output_dir
+#VERY important that train is given before test. Saves both files into output_dir. 
