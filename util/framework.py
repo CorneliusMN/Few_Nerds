@@ -392,6 +392,7 @@ class FewShotNERFramework:
 
         it = 0
         while it + 1 < train_iter:
+            number_sen = 0
             for _, (support, query) in enumerate(self.train_data_loader):
                 support_sentence_counts = support.get("sentence_num", None)
                 support_total = 0
@@ -411,8 +412,7 @@ class FewShotNERFramework:
                         query_total = sum(query_sentence_counts)
                 # Combine both support and query sentence counts
                 total_batch_sentences = support_total + query_total
-                with open("output_proto.txt", "a", encoding = "utf-8") as writer:
-                        writer.write(f"Number of sentences: {total_batch_sentences}\n\n")
+                number_sen += total_batch_sentences
                 label = torch.cat(query['label'], 0)
                 if torch.cuda.is_available():
                     for k in support:
@@ -448,6 +448,7 @@ class FewShotNERFramework:
                     recall = correct_cnt / label_cnt
                     f1 = 2 * precision * recall / (precision + recall)
                     with open("output_proto.txt", "a", encoding = "utf-8") as writer:
+                        writer.write(f"Number of sentences: {number_sen}\n\n")
                         writer.write(f"f1: {f1}\n\n")
                         writer.write(f"precision: {precision}\n\n")
                         writer.write(f"recall: {recall}\n\n")
