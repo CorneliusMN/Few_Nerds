@@ -14,4 +14,5 @@ python3 run_supervised.py --data_dir sup --model_type bert --model_name_or_path 
 python3 merge_and_convert_to_supervised.py train_art_2_1.jsonl test_art_2_1.jsonl --output_dir
 
 
-# 
+# scores_plot.py 
+python scores_plot.py "input.txt"
