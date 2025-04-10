@@ -11,7 +11,7 @@ python3 run_supervised.py --data_dir sup --model_type bert --model_name_or_path 
 
 # merge_and_convert_to_supervised.py
 
-python3 merge_and_convert_to_supervised.py train_art_2_1.jsonl test_art_2_1.jsonl
+python3 merge_and_convert_to_supervised.py train_art_2_1.jsonl test_art_2_1.jsonl --output_dir
 
 
 # 
