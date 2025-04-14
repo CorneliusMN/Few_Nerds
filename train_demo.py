@@ -23,6 +23,8 @@ def set_seed(seed):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--output_file_name", default="proto_output.txt", type=str,
+                    help="The name of the output file to save results to.")
     parser.add_argument('--mode', default='inter',
             help='training mode, must be in [inter, intra]')
     parser.add_argument('--trainN', default=2, type=int,
@@ -139,7 +141,7 @@ def main():
     if model_name == 'proto':
         print('use proto')
         model = Proto(word_encoder, dot=opt.dot, ignore_index=opt.ignore_index)
-        framework = FewShotNERFramework(train_data_loader, val_data_loader, test_data_loader, use_sampled_data=opt.use_sampled_data)
+        framework = FewShotNERFramework(train_data_loader, val_data_loader, test_data_loader, use_sampled_data=opt.use_sampled_data, output_file_name = args.output_file_name)
     elif model_name == 'nnshot':
         print('use nnshot')
         model = NNShot(word_encoder, dot=opt.dot, ignore_index=opt.ignore_index)

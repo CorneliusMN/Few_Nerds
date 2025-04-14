@@ -333,7 +333,8 @@ class FewShotNERFramework:
               warmup_step=300,
               grad_iter=1,
               fp16=False,
-              use_sgd_for_bert=False):
+              use_sgd_for_bert=False,
+              output_file_name):
         '''
         model: a FewShotREModel instance
         model_name: Name of the model
@@ -447,7 +448,7 @@ class FewShotNERFramework:
                     precision = correct_cnt / pred_cnt
                     recall = correct_cnt / label_cnt
                     f1 = 2 * precision * recall / (precision + recall)
-                    with open("output_proto.txt", "a", encoding = "utf-8") as writer:
+                    with open(output_file_name, "a", encoding = "utf-8") as writer:
                         writer.write(f"Number of sentences: {number_sen}\n\n")
                         writer.write(f"f1: {f1}\n\n")
                         writer.write(f"precision: {precision}\n\n")

@@ -145,7 +145,7 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
                 if args.local_rank in [-1, 0] and args.logging_steps > 0 and global_step % args.logging_steps == 0:
                     # Log metrics
                     if args.local_rank == -1 and args.evaluate_during_training: # Only evaluate when single GPU otherwise metrics may not average well
-                        with open("output.txt", "a", encoding = "utf-8") as writer:
+                        with open(args.output_file_name, "a", encoding = "utf-8") as writer:
                             writer.write(f"Number of sentences: {(step+1)*(args.train_batch_size)}\n")
                             writer.write(f"Step: {step}")
                             writer.write("\n")
@@ -240,7 +240,7 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
     logger.info("***** Eval results %s *****", prefix)
     for key in sorted(results.keys()):
         logger.info("  %s = %s", key, str(results[key]))
-    with open("output.txt", "a", encoding = "utf-8") as writer:
+    with open(args.output_file_name, "a", encoding = "utf-8") as writer:
         for key in sorted(results.keys()):
             writer.write("{} = {}\n".format(key, str(results[key])))
             writer.write("\n")
@@ -299,6 +299,8 @@ def main():
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
     ## Other parameters
+    parser.add_argument("--output_file_name", default="output.txt", type=str,
+                    help="The name of the output file to save running dev test results to.")
     parser.add_argument("--labels", default="", type=str,
                         help="Path to a file containing all labels. If not specified, CoNLL-2003 labels are used.")
     parser.add_argument("--config_name", default="", type=str,
@@ -342,7 +344,7 @@ def main():
                         help="Linear warmup over warmup_steps.")
     parser.add_argument("--logging_steps", type=int, default=50,
                         help="Log every X updates steps.")
-    parser.add_argument("--save_steps", type=int, default=50,
+    parser.add_argument("--save_steps", type=int, default=500000,
                         help="Save checkpoint every X updates steps.")
     parser.add_argument("--eval_all_checkpoints", action="store_true",
                         help="Evaluate all checkpoints starting with the same prefix as model_name ending and ending with step number")
@@ -493,4 +495,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python3 run_supervised.py --data_dir sup --model_type bert --model_name_or_path bert-base-uncased --output_dir supervised_output --do_train --do_eval --evaluate_during_training  --logging_steps 20 --save_steps 500000 --labels data_conll/labels.txt --do_lower_case --overwrite_cache --overwrite_output_dir
+# python3 run_supervised.py --data_dir sup --model_type bert --model_name_or_path bert-base-uncased --output_dir supervised_output --output_file_name [INPUT] --do_train --do_eval --evaluate_during_training  --logging_steps 10 --save_steps 500000 --labels data_conll/labels.txt --do_lower_case --overwrite_cache --overwrite_output_dir
