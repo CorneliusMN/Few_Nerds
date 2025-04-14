@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --job-name=supervised_bert_organization_1_1
+#SBATCH --output=outputs/job.organization_1_1.%j.out
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=16G
+#SBATCH --nodes=1
+#SBATCH --nodelist=cn[3,4,5,6,7,9,10,12,13,18,19]
+#SBATCH --gres=gpu:1
+#SBATCH --time=08:00:00
+#SBATCH --mail-type=ALL
+
+hostname
+nvidia-smi
+module load Anaconda3
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate NLP
+cd ~/Few_Nerds
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+python run_supervised.py --data_dir data_supervised/combined/organization_1_1 --model_type bert --model_name_or_path bert-base-uncased --output_dir supervised_output --output_file_name organization_1_1 --do_train --do_eval --evaluate_during_training --logging_steps 1250 --labels labels.txt --do_lower_case --overwrite_cache --overwrite_output_dir
