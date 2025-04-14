@@ -1,7 +1,7 @@
 import os
 
-combined_dir = 'data_supervised/single'
-jobscript_dir = 'jobscripts_single'
+combined_dir = 'data_supervised/combined'
+jobscript_dir = 'jobscripts_combined'
 os.makedirs(jobscript_dir, exist_ok=True)
 
 # Template for the SLURM script
