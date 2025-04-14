@@ -31,7 +31,7 @@ for folder_name in os.listdir(combined_dir):
     full_path = os.path.join(combined_dir, folder_name)
     if os.path.isdir(full_path):
         job_script = slurm_template.format(name=folder_name)
-        script_filename = os.path.join(jobscript_dir, f"{folder_name}.sbatch")
+        script_filename = os.path.join(jobscript_dir, f"{folder_name}.job")
         with open(script_filename, "w") as f:
             f.write(job_script)
 
