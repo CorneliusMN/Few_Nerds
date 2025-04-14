@@ -23,7 +23,7 @@ source $(conda info --base)/etc/profile.d/conda.sh
 conda activate NLP
 cd ~/Few_Nerds
 export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
-python run_supervised.py --data_dir data_supervised/combined/{name} --model_type bert --model_name_or_path bert-base-uncased --output_dir supervised_output --output_file_name {name} --do_train --do_eval --evaluate_during_training --logging_steps 1250 --labels labels.txt --do_lower_case --overwrite_cache --overwrite_output_dir
+python run_supervised.py --data_dir data_supervised/combined/{name} --model_type bert --model_name_or_path bert-base-uncased --output_dir supervised_output --output_file_name {name} --do_train --do_eval --evaluate_during_training --logging_steps 10 --labels labels.txt --do_lower_case --overwrite_cache --overwrite_output_dir
 """
 
 # Loop through the combined folder
