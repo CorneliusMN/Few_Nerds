@@ -324,6 +324,7 @@ class FewShotNERFramework:
     def train(self,
               model,
               model_name,
+              output_file_name,
               learning_rate=1e-1,
               train_iter=30000,
               val_iter=1000,
@@ -333,8 +334,7 @@ class FewShotNERFramework:
               warmup_step=300,
               grad_iter=1,
               fp16=False,
-              use_sgd_for_bert=False,
-              output_file_name):
+              use_sgd_for_bert=False):
         '''
         model: a FewShotREModel instance
         model_name: Name of the model
