@@ -1,0 +1,384 @@
+Number of sentences: 80
+Step: 9
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+Number of sentences: 160
+Step: 19
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+Number of sentences: 240
+Step: 29
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+Number of sentences: 320
+Step: 39
+f1 = 0.010720662098864995
+
+precision = 0.009890109890001208
+
+recall = 0.011703511053163803
+
+Number of sentences: 400
+Step: 49
+f1 = 0.015775631012574568
+
+precision = 0.02419354838644641
+
+recall = 0.011703511053163803
+
+Number of sentences: 480
+Step: 59
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+Number of sentences: 560
+Step: 69
+f1 = 0.14457830877404393
+
+precision = 0.2137404580098285
+
+recall = 0.10923276982952883
+
+Number of sentences: 640
+Step: 79
+f1 = 0.060734458313094895
+
+precision = 0.06646058732509334
+
+recall = 0.05591677503178261
+
+Number of sentences: 720
+Step: 89
+f1 = 0.36045810231580283
+
+precision = 0.3359550561760005
+
+recall = 0.38881664498844193
+
+Number of sentences: 800
+Step: 99
+f1 = 0.4465528096723064
+
+precision = 0.43472906403405503
+
+recall = 0.4590377113074247
+
+Number of sentences: 880
+Step: 109
+f1 = 0.09735449432130129
+
+precision = 0.2613636363487861
+
+recall = 0.05981794538283722
+
+Number of sentences: 960
+Step: 119
+f1 = 0.5527177422097852
+
+precision = 0.5567282321826289
+
+recall = 0.5487646293816806
+
+Number of sentences: 1040
+Step: 129
+f1 = 0.5901038435144373
+
+precision = 0.5564516128968151
+
+recall = 0.6280884265197908
+
+Number of sentences: 1120
+Step: 139
+f1 = 0.5896103846027408
+
+precision = 0.5888456549858775
+
+recall = 0.590377113126263
+
+Number of sentences: 1200
+Step: 149
+f1 = 0.6618962383180489
+
+precision = 0.6112334801694798
+
+recall = 0.7217165149451013
+
+Number of sentences: 1280
+Step: 159
+f1 = 0.5946283522770162
+
+precision = 0.5721153846085082
+
+recall = 0.6189856957006634
+
+Number of sentences: 1360
+Step: 169
+f1 = 0.6345238045519771
+
+precision = 0.585071350158232
+
+recall = 0.6931079323707008
+
+Number of sentences: 1440
+Step: 179
+f1 = 0.6399514218508012
+
+precision = 0.6002277904259655
+
+recall = 0.6853055916685916
+
+Number of sentences: 1520
+Step: 189
+f1 = 0.5520581063972718
+
+precision = 0.5164212910473791
+
+recall = 0.5929778933602994
+
+Number of sentences: 1600
+Step: 199
+f1 = 0.6418092859636406
+
+precision = 0.6055363321729466
+
+recall = 0.6827048114345552
+
+Number of sentences: 1680
+Step: 209
+f1 = 0.607792202784323
+
+precision = 0.6070038910427107
+
+recall = 0.6085825747645178
+
+Number of sentences: 1760
+Step: 219
+f1 = 0.6468401437019559
+
+precision = 0.6177514792826302
+
+recall = 0.6788036410835006
+
+Number of sentences: 1840
+Step: 229
+f1 = 0.6625463485269014
+
+precision = 0.631330977613294
+
+recall = 0.6970091027217554
+
+Number of sentences: 1920
+Step: 239
+f1 = 0.5290322530579896
+
+precision = 0.5249679897500004
+
+recall = 0.5331599479774621
+
+Number of sentences: 2000
+Step: 249
+f1 = 0.4982841405130746
+
+precision = 0.5276162790620986
+
+recall = 0.47204161247760673
+
+Number of sentences: 2080
+Step: 259
+f1 = 0.5970341664949093
+
+precision = 0.5920716112456257
+
+recall = 0.6020806241794268
+
+Number of sentences: 2160
+Step: 269
+f1 = 0.5877192932448524
+
+precision = 0.5671100362688378
+
+recall = 0.6098829648815359
+
+Number of sentences: 2240
+Step: 279
+f1 = 0.6506469450981179
+
+precision = 0.618266978915477
+
+recall = 0.6866059817856098
+
+Number of sentences: 2320
+Step: 289
+f1 = 0.6536030291296124
+
+precision = 0.6359163591557698
+
+recall = 0.6723016904984096
+
+Number of sentences: 2400
+Step: 299
+f1 = 0.6966426808733374
+
+precision = 0.6462736373676722
+
+recall = 0.7555266579875745
+
+Number of sentences: 2480
+Step: 309
+f1 = 0.7391304297834267
+
+precision = 0.7074910820367718
+
+recall = 0.7737321196258292
+
+Number of sentences: 2560
+Step: 319
+f1 = 0.6335978785909813
+
+precision = 0.6446837146615789
+
+recall = 0.622886866051718
+
+Number of sentences: 2640
+Step: 329
+f1 = 0.6341169329333597
+
+precision = 0.5910112359484156
+
+recall = 0.6840052015515734
+
+Number of sentences: 2720
+Step: 339
+f1 = 0.6486817853209939
+
+precision = 0.6136890951204909
+
+recall = 0.687906371902628
+
+Number of sentences: 2800
+Step: 349
+f1 = 0.6742138314748547
+
+precision = 0.6528623629640333
+
+recall = 0.6970091027217554
+
+Number of sentences: 2880
+Step: 359
+f1 = 0.7421686697168604
+
+precision = 0.6913580246835986
+
+recall = 0.8010403120832115
+
+Number of sentences: 2960
+Step: 369
+f1 = 0.710542347235292
+
+precision = 0.668577981643709
+
+recall = 0.7581274382216108
+
+Number of sentences: 3040
+Step: 379
+f1 = 0.6739261898133845
+
+precision = 0.6300904977304288
+
+recall = 0.7243172951791376
+
+Number of sentences: 3120
+Step: 389
+f1 = 0.6431226715830427
+
+precision = 0.614201183424684
+
+recall = 0.674902470732446
+
+Number of sentences: 3200
+Step: 399
+f1 = 0.6161616111580531
+
+precision = 0.5987730061276224
+
+recall = 0.6345903771048818
+
+Number of sentences: 3280
+Step: 409
+f1 = 0.6383787157045949
+
+precision = 0.6222222222145405
+
+recall = 0.6553966189771729
+
+Number of sentences: 3360
+Step: 419
+f1 = 0.6474278494522512
+
+precision = 0.6254545454469642
+
+recall = 0.6710013003813914
+
+Number of sentences: 3440
+Step: 429
+f1 = 0.6452425910898928
+
+precision = 0.6259168704079962
+
+recall = 0.6657997399133186
+
+Number of sentences: 3520
+Step: 439
+f1 = 0.6489637255616175
+
+precision = 0.6464516128948845
+
+recall = 0.6514954486261184
+
+Number of sentences: 3600
+Step: 449
+f1 = 0.6614886681306983
+
+precision = 0.6585051546306894
+
+recall = 0.6644993497963004
+
+Number of sentences: 3680
+Step: 459
+f1 = 0.6773985783787356
+
+precision = 0.6709183673383812
+
+recall = 0.6840052015515734
+
+Number of sentences: 3760
+Step: 469
+f1 = 0.6849489745849306
+
+precision = 0.6720901126323894
+
+recall = 0.6983094928387736
+
+Number of sentences: 3840
+Step: 479
+f1 = 0.6886075899315255
+
+precision = 0.6707768187340225
+
+recall = 0.707412223657901
+
