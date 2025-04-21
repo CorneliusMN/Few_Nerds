@@ -15,4 +15,5 @@ python3 merge_and_convert_to_supervised.py train_art_2_1.jsonl test_art_2_1.json
 
 
 # scores_plot.py 
-python scores_plot.py "input.txt"
+
+python scores_plot.py --file1 file_name_1.txt --file2 file_name_2.txt
