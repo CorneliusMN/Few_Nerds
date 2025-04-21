@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --job-name=fewshot_proto_product_1_5        # Job name
+#SBATCH --output=outputs/job.product_1_5.%j.out      # Name of output file (%j expands to jobId)
+#SBATCH --cpus-per-task=8        # Schedule one core
+#SBATCH --time=08:00:00          # Run time (hh:mm:ss) - run for one hour max
+#SBATCH --mem=32G                 # Request 8GB RAM (adjust if needed)
+#SBATCH --mail-type=BEGIN,END,FAIL		 # Send email when job ends
+#SBATCH --nodes=1
+#SBATCH --nodelist=cn[3,4,5,6,7,9,10,12,13,18,19]
+#SBATCH --gres=gpu:1       # Request 1 GPU, if needed
+
+# Print out the hostname of the node the job is running on
+hostname
+
+module load Anaconda3
+source /opt/itu/easybuild/software/Anaconda3/2024.02-1/etc/profile.d/conda.sh
+conda activate trial_env  # Activating pre-created environmentpip install --upgrade pip
+
+cd ~/filesfolder/Few_Nerds
+python3 train_demo.py --N 1 --trainN 1 --K 5 --Q 5 --use_sampled_data --prefix product --train_iter 700 --val_step 2 --val_iter 150 --output_file_name product_1_5.txt 
+
