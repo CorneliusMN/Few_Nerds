@@ -447,7 +447,7 @@ class FewShotNERFramework:
                 if (it + 1) % 100 == 0 or (it + 1) % val_step == 0:
                     precision = correct_cnt / pred_cnt
                     recall = correct_cnt / label_cnt
-                    f1 = 2 * precision * recall / (precision + recall)
+                    f1 = 2 * precision * recall / (precision + recall + 1e-8)
                     with open(self.output_file_name, "a", encoding = "utf-8") as writer:
                         writer.write(f"Number of sentences: {number_sen}\n\n")
                         # writer.write(f"f1: {f1}\n\n")
@@ -582,7 +582,7 @@ class FewShotNERFramework:
                         break
                     it += 1
 
-            epsilon = 1e-6
+            epsilon = 1e-8
             precision = correct_cnt / (pred_cnt + epsilon)
             recall = correct_cnt / (label_cnt + epsilon)
             f1 = 2 * precision * recall / (precision + recall + epsilon)
