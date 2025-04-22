@@ -18,5 +18,5 @@ source /opt/itu/easybuild/software/Anaconda3/2024.02-1/etc/profile.d/conda.sh
 conda activate trial_env  # Activating pre-created environmentpip install --upgrade pip
 
 cd ~/filesfolder/Few_Nerds
-python3 train_demo.py --N 5 --trainN 5 --K 5 --Q 5 --use_sampled_data --prefix combined --train_iter 2075 --val_step 2 --val_iter 450 --output_file_name combined_5_5.txt 
+python3 train_demo.py --N 5 --trainN 5 --K 5 --Q 5 --use_sampled_data --prefix combined --train_iter 2075 --val_step 1 --val_iter 450 --output_file_name combined_5_5.txt 
 
