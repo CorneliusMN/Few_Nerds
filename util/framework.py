@@ -285,7 +285,7 @@ class FewShotNERModel(nn.Module):
 
 class FewShotNERFramework:
 
-    def __init__(self, train_data_loader, val_data_loader, test_data_loader, viterbi=False, N=None, train_fname=None, tau=0.05, use_sampled_data=True):
+    def __init__(self, train_data_loader, val_data_loader, test_data_loader, output_file_name, viterbi=False, N=None, train_fname=None, tau=0.05, use_sampled_data=True):
         '''
         train_data_loader: DataLoader for training.
         val_data_loader: DataLoader for validating.
@@ -295,6 +295,7 @@ class FewShotNERFramework:
         self.val_data_loader = val_data_loader
         self.test_data_loader = test_data_loader
         self.viterbi = viterbi
+        self.output_file_name = output_file_name
         if viterbi:
             abstract_transitions = get_abstract_transitions(train_fname, use_sampled_data=use_sampled_data)
             self.viterbi_decoder = ViterbiDecoder(N+2, abstract_transitions, tau)
@@ -324,7 +325,6 @@ class FewShotNERFramework:
     def train(self,
               model,
               model_name,
-              output_file_name,
               learning_rate=1e-1,
               train_iter=30000,
               val_iter=1000,
@@ -448,11 +448,11 @@ class FewShotNERFramework:
                     precision = correct_cnt / pred_cnt
                     recall = correct_cnt / label_cnt
                     f1 = 2 * precision * recall / (precision + recall)
-                    with open(output_file_name, "a", encoding = "utf-8") as writer:
+                    with open(self.output_file_name, "a", encoding = "utf-8") as writer:
                         writer.write(f"Number of sentences: {number_sen}\n\n")
-                        writer.write(f"f1: {f1}\n\n")
-                        writer.write(f"precision: {precision}\n\n")
-                        writer.write(f"recall: {recall}\n\n")
+                        # writer.write(f"f1: {f1}\n\n")
+                        # writer.write(f"precision: {precision}\n\n")
+                        # writer.write(f"recall: {recall}\n\n")
                     sys.stdout.write('step: {0:4} | loss: {1:2.6f} | [ENTITY] precision: {2:3.4f}, recall: {3:3.4f}, f1: {4:3.4f}'\
                         .format(it + 1, iter_loss/ iter_sample, precision, recall, f1) + '\r')
                 sys.stdout.flush()
@@ -523,7 +523,7 @@ class FewShotNERFramework:
         model.eval()
         if ckpt is None:
             print("Use val dataset")
-            eval_dataset = self.val_data_loader
+            eval_dataset = self.test_data_loader # BEFORE there was val_data_loader
         else:
             print("Use test dataset")
             if ckpt != 'none':
@@ -533,11 +533,13 @@ class FewShotNERFramework:
                     if name not in own_state:
                         continue
                     own_state[name].copy_(param)
-            eval_dataset = self.test_data_loader
+            eval_dataset = self.val_data_loader # BEFORE there was test_data_loader
 
         pred_cnt = 0 # pred entity cnt
         label_cnt = 0 # true label entity cnt
         correct_cnt = 0 # correct predicted entity cnt
+        print("WE ARE HERE")
+        print(len(eval_dataset))
 
         fp_cnt = 0 # misclassify O as I-
         fn_cnt = 0 # misclassify I- as O
@@ -588,6 +590,11 @@ class FewShotNERFramework:
             fn_error = fn_cnt / total_token_cnt
             within_error = within_cnt / (total_span_cnt + epsilon)
             outer_error = outer_cnt / (total_span_cnt + epsilon)
+            with open(self.output_file_name, "a", encoding = "utf-8") as writer: # MOVED this here, before it was inside the training loop
+                # writer.write(f"Number of sentences: {number_sen}\n\n")
+                writer.write(f"f1: {f1}\n\n")
+                writer.write(f"precision: {precision}\n\n")
+                writer.write(f"recall: {recall}\n\n")
             sys.stdout.write('[EVAL] step: {0:4} | [ENTITY] precision: {1:3.4f}, recall: {2:3.4f}, f1: {3:3.4f}'.format(it + 1, precision, recall, f1) + '\r')
             sys.stdout.flush()
             print("")

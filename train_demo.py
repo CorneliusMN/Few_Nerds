@@ -141,7 +141,7 @@ def main():
     if model_name == 'proto':
         print('use proto')
         model = Proto(word_encoder, dot=opt.dot, ignore_index=opt.ignore_index)
-        framework = FewShotNERFramework(train_data_loader, val_data_loader, test_data_loader, use_sampled_data=opt.use_sampled_data)
+        framework = FewShotNERFramework(train_data_loader, val_data_loader, test_data_loader, use_sampled_data=opt.use_sampled_data, output_file_name = opt.output_file_name)
     elif model_name == 'nnshot':
         print('use nnshot')
         model = NNShot(word_encoder, dot=opt.dot, ignore_index=opt.ignore_index)
@@ -170,7 +170,7 @@ def main():
         framework.train(model, prefix,
                 load_ckpt=opt.load_ckpt, save_ckpt=ckpt,
                 val_step=opt.val_step, fp16=opt.fp16,
-                train_iter=opt.train_iter, warmup_step=int(opt.train_iter * 0.1), val_iter=opt.val_iter, learning_rate=opt.lr, use_sgd_for_bert=opt.use_sgd_for_bert, output_file_name = opt.output_file_name)
+                train_iter=opt.train_iter, warmup_step=int(opt.train_iter * 0.1), val_iter=opt.val_iter, learning_rate=opt.lr, use_sgd_for_bert=opt.use_sgd_for_bert)
     else:
         ckpt = opt.load_ckpt
         if ckpt is None:
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     main()
 
 # how to run: 
-# python3 train_demo.py --N 2 --K 5 --trainN 2 --use_sampled_data --train_iter 4900
+# python train_demo.py --N 1 --trainN 1 --K 5 --Q 5 --use_sampled_data --train_iter 2075 --val_step 2 --val_iter 450 --output_file_name combined_1_5.txt
 
 # if you do not have already sampled data with the n/k you want, take out the --use_sampled_data argument
 # --train_iter is the number of episodes you want to train it on
