@@ -83,6 +83,16 @@ def file_to_lists(path):
     - sentences: number of sentences values
     - scores: f1 values
     """
+    # sentences, scores = [], []
+    # current_num = None
+    # with open(path, "r") as f:
+    #     for line in f:
+    #         if "Number of sentences" in line:
+    #             current_num = int(line.split()[-1])
+    #         elif "f1" in line and current_num is not None:
+    #             sentences.append(current_num)
+    #             scores.append(float(line.split()[-1]))
+    # return sentences, scores
     sentences, scores = [], []
     current_num = None
     with open(path, "r") as f:
@@ -90,6 +100,9 @@ def file_to_lists(path):
             if "Number of sentences" in line:
                 current_num = int(line.split()[-1])
             elif "f1" in line and current_num is not None:
+                # if sentence count has decreased, stop processing
+                if sentences and current_num < sentences[-1]:
+                    break
                 sentences.append(current_num)
                 scores.append(float(line.split()[-1]))
     return sentences, scores
@@ -100,7 +113,8 @@ def filter_to_common_range(s1, f1, s2, f2):
     """
     max1 = max(s1) if s1 else 0
     max2 = max(s2) if s2 else 0
-    x_limit = min(max1, max2)
+    # x_limit = min(max1, max2)
+    x_limit = 2000
 
     def trim(s, f):
         pairs = [(si, fi) for si, fi in zip(s, f) if si <= x_limit]
@@ -131,8 +145,8 @@ def main():
     s1_f, f1_f, s2_f, f2_f, x_limit = filter_to_common_range(s1, f1, s2, f2)
 
     plt.figure(figsize=(10, 6))
-    plt.plot(s1_f, f1_f, marker = 'o', linestyle = '-', label = os.path.basename(args.file1))
-    plt.plot(s2_f, f2_f, marker = 'o', linestyle = '-', label = os.path.basename(args.file2))
+    plt.plot(s1_f, f1_f, linestyle = '-', label = os.path.basename(args.file1))
+    plt.plot(s2_f, f2_f, linestyle = '-', label = os.path.basename(args.file2))
 
     plt.title("F1 Score vs Number of Sentences")
     plt.xlabel("Number of Sentences")
