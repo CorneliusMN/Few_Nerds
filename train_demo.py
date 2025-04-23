@@ -27,6 +27,7 @@ def main():
                     help="The name of the output file to save results to.")
     parser.add_argument('--mode', default='inter',
             help='training mode, must be in [inter, intra]')
+    parser.add_argument('--prefix', default = 'product', help = 'Subfolder in episodes-data directory')
     parser.add_argument('--trainN', default=2, type=int,
             help='N in train')
     parser.add_argument('--N', default=2, type=int,
@@ -116,8 +117,8 @@ def main():
             os.system(f'bash data/download.sh {opt.mode}')
     else:
         opt.train = f'data/episode-data/{opt.mode}/train_{opt.N}_{opt.K}.jsonl'
-        opt.test = f'data/episode-data/{opt.mode}/test_{opt.N}_{opt.K}.jsonl'
-        opt.dev = f'data/episode-data/{opt.mode}/dev_{opt.N}_{opt.K}.jsonl'
+        opt.test = f'data/episode-data/{opt.mode}/dev_{opt.prefix}_{opt.N}_{opt.K}.jsonl'
+        opt.dev = f'data/episode-data/{opt.mode}/test_{opt.prefix}_{opt.N}_{opt.K}.jsonl'
         if not (os.path.exists(opt.train) and os.path.exists(opt.dev) and os.path.exists(opt.test)):
             os.system(f'bash data/download.sh episode-data')
             os.system('unzip -d data/ data/episode-data.zip')
