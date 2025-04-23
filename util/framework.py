@@ -523,7 +523,7 @@ class FewShotNERFramework:
         model.eval()
         if ckpt is None:
             print("Use val dataset")
-            eval_dataset = self.test_data_loader # BEFORE there was val_data_loader
+            eval_dataset = self.val_data_loader
         else:
             print("Use test dataset")
             if ckpt != 'none':
@@ -533,7 +533,7 @@ class FewShotNERFramework:
                     if name not in own_state:
                         continue
                     own_state[name].copy_(param)
-            eval_dataset = self.val_data_loader # BEFORE there was test_data_loader
+            eval_dataset = self.test_data_loader
 
         pred_cnt = 0 # pred entity cnt
         label_cnt = 0 # true label entity cnt
