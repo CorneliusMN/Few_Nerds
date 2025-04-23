@@ -116,7 +116,7 @@ def main():
         if not (os.path.exists(opt.train) and os.path.exists(opt.dev) and os.path.exists(opt.test)):
             os.system(f'bash data/download.sh {opt.mode}')
     else:
-        opt.train = f'data/episode-data/{opt.mode}/train_{opt.N}_{opt.K}.jsonl'
+        opt.train = f'data/episode-data/{opt.mode}/train_{opt.prefix}_{opt.N}_{opt.K}.jsonl'
         opt.test = f'data/episode-data/{opt.mode}/dev_{opt.prefix}_{opt.N}_{opt.K}.jsonl'
         opt.dev = f'data/episode-data/{opt.mode}/test_{opt.prefix}_{opt.N}_{opt.K}.jsonl'
         if not (os.path.exists(opt.train) and os.path.exists(opt.dev) and os.path.exists(opt.test)):
