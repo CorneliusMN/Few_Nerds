@@ -244,14 +244,7 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
         for key in sorted(results.keys()):
             writer.write("{} = {}\n".format(key, str(results[key])))
             writer.write("\n")
-            writer.write("predictions:")
-            for prediction in preds_list:
-                writer.write(f"{preds_list} ")
-            writer.write("\n")
-            writer.write("labels:")
-            for labels in out_label_list:
-                writer.write(f"{labels} ")
-            writer.write("\n")
+
 
     return results, preds_list
 
