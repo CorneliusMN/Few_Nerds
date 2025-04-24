@@ -1,9 +1,0 @@
-cn9.hpc.itu.dk
-Traceback (most recent call last):
-  File "train_demo.py", line 1, in <module>
-    from transformers import BertTokenizer
-ModuleNotFoundError: No module named 'transformers'
-
-real	0m0.070s
-user	0m0.008s
-sys	0m0.008s
