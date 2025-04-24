@@ -1,6 +1,7 @@
 import argparse
 import os
 import matplotlib.pyplot as plt
+import numpy as np
 
 def file_to_lists(path):
     """
@@ -38,8 +39,10 @@ def filter_to_common_range(s1, f1, s2, f2):
     """
     max1 = max(s1) if s1 else 0
     max2 = max(s2) if s2 else 0
+    print(max1)
+    print(max2)
     # x_limit = min(max1, max2)
-    x_limit = 2000
+    x_limit = 10000
 
     def trim(s, f):
         pairs = [(si, fi) for si, fi in zip(s, f) if si <= x_limit]
@@ -76,7 +79,8 @@ def main():
     plt.title("F1 Score vs Number of Sentences")
     plt.xlabel("Number of Sentences")
     plt.ylabel("F1 Score")
-    plt.xlim(0, x_limit)
+    # plt.xlim(0, x_limit)
+    plt.xticks(np.arange(0, x_limit, step = 1000))
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
