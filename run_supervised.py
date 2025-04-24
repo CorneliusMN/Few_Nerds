@@ -230,7 +230,6 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
                 preds_list[i].append(label_map[preds[i][j]])
 
     metric = Metrics()
-    preds_and_labels = (preds_list, out_label_list)
     p, r, f = metric.metrics_by_entity(preds_list, out_label_list)
     results = {
         "precision": p,
@@ -245,7 +244,13 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
         for key in sorted(results.keys()):
             writer.write("{} = {}\n".format(key, str(results[key])))
             writer.write("\n")
-            writer.write(preds_and_labels)
+            writer.write("predictions:")
+            for prediction in preds_list:
+                writer.write(f"{preds_list} ")
+            writer.write("\n")
+            writer.write("labels:")
+            for labels in out_label_list:
+                writer.write(f"{labels} ")
             writer.write("\n")
 
     return results, preds_list
