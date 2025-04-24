@@ -1,0 +1,1229 @@
+cn10.hpc.itu.dk
+/home/szul/.local/lib/python3.11/site-packages/huggingface_hub/file_download.py:896: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/szul/.local/lib/python3.11/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+1-way-1-shot Few-Shot NER
+model: proto
+max_length: 100
+mode: inter
+loading model and tokenizer...
+loading data...
+use proto
+model-save-path: checkpoint/proto-inter-1-1-seed0.pth.tar
+Start training...
+Use bert optim!
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+step:   10 | loss: 290.352007 | [ENTITY] precision: 0.5000, recall: 0.0217, f1: 0.0417
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.4664, recall: 0.7921, f1: 0.5871
+Best checkpoint
+step:   20 | loss: 112.715770 | [ENTITY] precision: 0.0556, recall: 0.0408, f1: 0.0471
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.3764, recall: 0.8720, f1: 0.5258
+step:   30 | loss: 32.363088 | [ENTITY] precision: 0.0580, recall: 0.0784, f1: 0.0667
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.3539, recall: 0.8872, f1: 0.5060
+step:   40 | loss: 22.345209 | [ENTITY] precision: 0.1163, recall: 0.1020, f1: 0.1087
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.3592, recall: 0.8517, f1: 0.5053
+step:   50 | loss: 15.270674 | [ENTITY] precision: 0.0526, recall: 0.0200, f1: 0.0290
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.2873, recall: 0.7807, f1: 0.4200
+step:   60 | loss: 8.547106 | [ENTITY] precision: 0.0833, recall: 0.0204, f1: 0.0328
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.2891, recall: 0.8137, f1: 0.4266
+step:   70 | loss: 11.270765 | [ENTITY] precision: 0.0526, recall: 0.0213, f1: 0.0303
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.3122, recall: 0.8492, f1: 0.4566
+step:   80 | loss: 7.703817 | [ENTITY] precision: 0.0882, recall: 0.0566, f1: 0.0690
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.3221, recall: 0.8492, f1: 0.4671
+step:   90 | loss: 6.801649 | [ENTITY] precision: 0.2075, recall: 0.2157, f1: 0.2115
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.3844, recall: 0.8580, f1: 0.5310
+step:  100 | loss: 3.907339 | [ENTITY] precision: 0.2931, recall: 0.3617, f1: 0.3238
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.6375, recall: 0.8872, f1: 0.7419
+Best checkpoint
+step:  110 | loss: 8.123524 | [ENTITY] precision: 0.3208, recall: 0.3400, f1: 0.3301
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.4427, recall: 0.8669, f1: 0.5861
+step:  120 | loss: 4.406076 | [ENTITY] precision: 0.4375, recall: 0.3962, f1: 0.4158
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.5004, recall: 0.8872, f1: 0.6399
+step:  130 | loss: 2.813650 | [ENTITY] precision: 0.4286, recall: 0.4898, f1: 0.4571
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.6765, recall: 0.9303, f1: 0.7834
+Best checkpoint
+step:  140 | loss: 3.497336 | [ENTITY] precision: 0.3857, recall: 0.5745, f1: 0.4615
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7846, recall: 0.9278, f1: 0.8502
+Best checkpoint
+step:  150 | loss: 2.242860 | [ENTITY] precision: 0.5000, recall: 0.5918, f1: 0.5421
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8066, recall: 0.9303, f1: 0.8640
+Best checkpoint
+step:  160 | loss: 3.908376 | [ENTITY] precision: 0.3725, recall: 0.3725, f1: 0.3725
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7854, recall: 0.9278, f1: 0.8507
+step:  170 | loss: 2.526119 | [ENTITY] precision: 0.6000, recall: 0.6792, f1: 0.6372
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7860, recall: 0.9265, f1: 0.8505
+step:  180 | loss: 3.101548 | [ENTITY] precision: 0.4792, recall: 0.4792, f1: 0.4792
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7397, recall: 0.9290, f1: 0.8236
+step:  190 | loss: 2.336148 | [ENTITY] precision: 0.4776, recall: 0.6400, f1: 0.5470
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7894, recall: 0.9265, f1: 0.8525
+step:  200 | loss: 2.805706 | [ENTITY] precision: 0.5273, recall: 0.5918, f1: 0.5577
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8114, recall: 0.9214, f1: 0.8629
+step:  210 | loss: 3.021064 | [ENTITY] precision: 0.4857, recall: 0.3542, f1: 0.4096
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7993, recall: 0.9341, f1: 0.8615
+step:  220 | loss: 5.696351 | [ENTITY] precision: 0.4590, recall: 0.6087, f1: 0.5234
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.6616, recall: 0.8821, f1: 0.7561
+step:  230 | loss: 3.737614 | [ENTITY] precision: 0.4038, recall: 0.4200, f1: 0.4118
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.6050, recall: 0.8327, f1: 0.7008
+step:  240 | loss: 2.019882 | [ENTITY] precision: 0.4717, recall: 0.5435, f1: 0.5051
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.6803, recall: 0.8847, f1: 0.7691
+step:  250 | loss: 4.484626 | [ENTITY] precision: 0.3729, recall: 0.4490, f1: 0.4074
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7688, recall: 0.9316, f1: 0.8424
+step:  260 | loss: 1.931405 | [ENTITY] precision: 0.5091, recall: 0.6222, f1: 0.5600
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8055, recall: 0.9341, f1: 0.8650
+Best checkpoint
+step:  270 | loss: 1.782929 | [ENTITY] precision: 0.6531, recall: 0.7442, f1: 0.6957
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8303, recall: 0.9366, f1: 0.8803
+Best checkpoint
+step:  280 | loss: 2.288665 | [ENTITY] precision: 0.7021, recall: 0.7174, f1: 0.7097
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8124, recall: 0.9328, f1: 0.8684
+step:  290 | loss: 1.942029 | [ENTITY] precision: 0.5200, recall: 0.5098, f1: 0.5149
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8070, recall: 0.9328, f1: 0.8654
+step:  300 | loss: 1.977073 | [ENTITY] precision: 0.5172, recall: 0.6122, f1: 0.5607
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8035, recall: 0.9328, f1: 0.8633
+step:  310 | loss: 2.691016 | [ENTITY] precision: 0.5102, recall: 0.5319, f1: 0.5208
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7970, recall: 0.9354, f1: 0.8606
+step:  320 | loss: 1.352222 | [ENTITY] precision: 0.5192, recall: 0.5510, f1: 0.5347
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7820, recall: 0.9366, f1: 0.8524
+step:  330 | loss: 2.168322 | [ENTITY] precision: 0.5714, recall: 0.6275, f1: 0.5981
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.7859, recall: 0.9354, f1: 0.8542
+step:  340 | loss: 1.871766 | [ENTITY] precision: 0.6545, recall: 0.7347, f1: 0.6923
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8017, recall: 0.9379, f1: 0.8645
+step:  350 | loss: 2.730330 | [ENTITY] precision: 0.5522, recall: 0.7708, f1: 0.6435
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8055, recall: 0.9341, f1: 0.8650
+step:  360 | loss: 2.289546 | [ENTITY] precision: 0.4706, recall: 0.5217, f1: 0.4948
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8119, recall: 0.9303, f1: 0.8671
+step:  370 | loss: 1.840801 | [ENTITY] precision: 0.4737, recall: 0.5294, f1: 0.5000
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8153, recall: 0.9341, f1: 0.8706
+step:  380 | loss: 0.965836 | [ENTITY] precision: 0.6207, recall: 0.7347, f1: 0.6729
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8097, recall: 0.9328, f1: 0.8669
+step:  390 | loss: 2.366623 | [ENTITY] precision: 0.5849, recall: 0.6596, f1: 0.6200
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8153, recall: 0.9341, f1: 0.8706
+step:  400 | loss: 1.255295 | [ENTITY] precision: 0.5385, recall: 0.5833, f1: 0.5600
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8214, recall: 0.9328, f1: 0.8736
+step:  410 | loss: 2.155520 | [ENTITY] precision: 0.7451, recall: 0.7308, f1: 0.7379
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8249, recall: 0.9316, f1: 0.8750
+step:  420 | loss: 1.895412 | [ENTITY] precision: 0.5000, recall: 0.5254, f1: 0.5124
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8282, recall: 0.9290, f1: 0.8757
+step:  430 | loss: 1.523783 | [ENTITY] precision: 0.5745, recall: 0.5510, f1: 0.5625
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8314, recall: 0.9316, f1: 0.8787
+step:  440 | loss: 1.716461 | [ENTITY] precision: 0.5357, recall: 0.6977, f1: 0.6061
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8328, recall: 0.9341, f1: 0.8805
+Best checkpoint
+step:  450 | loss: 1.301706 | [ENTITY] precision: 0.6000, recall: 0.6111, f1: 0.6055
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8326, recall: 0.9328, f1: 0.8799
+step:  460 | loss: 2.538159 | [ENTITY] precision: 0.5918, recall: 0.6042, f1: 0.5979
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8307, recall: 0.9328, f1: 0.8788
+step:  470 | loss: 2.289190 | [ENTITY] precision: 0.6458, recall: 0.6200, f1: 0.6327
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8255, recall: 0.9354, f1: 0.8770
+step:  480 | loss: 1.605682 | [ENTITY] precision: 0.5254, recall: 0.6327, f1: 0.5741
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8231, recall: 0.9379, f1: 0.8768
+step:  490 | loss: 2.031346 | [ENTITY] precision: 0.5000, recall: 0.6346, f1: 0.5593
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8211, recall: 0.9366, f1: 0.8751
+step:  500 | loss: 1.323820 | [ENTITY] precision: 0.6610, recall: 0.8125, f1: 0.7290
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8191, recall: 0.9354, f1: 0.8734
+step:  510 | loss: 1.259549 | [ENTITY] precision: 0.6250, recall: 0.7143, f1: 0.6667
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8182, recall: 0.9354, f1: 0.8729
+step:  520 | loss: 1.621782 | [ENTITY] precision: 0.5667, recall: 0.7083, f1: 0.6296
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8220, recall: 0.9366, f1: 0.8756
+step:  530 | loss: 2.483444 | [ENTITY] precision: 0.5469, recall: 0.6604, f1: 0.5983
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8248, recall: 0.9366, f1: 0.8772
+step:  540 | loss: 3.062543 | [ENTITY] precision: 0.5938, recall: 0.7037, f1: 0.6441
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8248, recall: 0.9366, f1: 0.8772
+step:  550 | loss: 3.645053 | [ENTITY] precision: 0.5490, recall: 0.5957, f1: 0.5714
+Use val dataset
+WE ARE HERE
+150
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:  150 | [ENTITY] precision: 0.8248, recall: 0.9366, f1: 0.8772
+
+####################
+
+Finish training proto-inter-1-1-seed0
+
+Use test dataset
+Successfully loaded checkpoint 'checkpoint/proto-inter-1-1-seed0.pth.tar'
+WE ARE HERE
+50
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+/home/szul/filesfolder/Few_Nerds/util/data_loader.py:269: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  mask = torch.tensor(mask).long()
+[EVAL] step:   50 | [ENTITY] precision: 0.3958, recall: 0.7600, f1: 0.5205
+RESULT: precision: 0.3958, recall: 0.7600, f1:0.5205
+ERROR ANALYSIS: fp: 0.1082, fn: 0.0012, within:0.0000, outer: 0.0000
+
+real	8m16.005s
+user	4m6.019s
+sys	0m46.248s
