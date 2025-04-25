@@ -248,7 +248,7 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
         # Flatten the lists for easier comparison
     flat_preds = [p for sublist in preds_list for p in sublist]
     flat_labels = [l for sublist in out_label_list for l in sublist]
-    unique_labels = set(flat_labels) | set(flat_preds)
+    unique_labels = set(labels)
 
     # Initialize counts
     label_metrics = {label: {"TP": 0, "FP": 0, "TN": 0, "FN": 0} for label in unique_labels}
