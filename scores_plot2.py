@@ -69,3 +69,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# python scores_plot2.py --file product_1_10_s.txt --labels "product-car,product-weapon"
