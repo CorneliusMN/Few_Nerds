@@ -504,23 +504,16 @@ class FewShotNERFramework:
                 pred.append(label-1)
         return torch.tensor(pred).cuda()
 
-    def eval(self,
-            model,
-            eval_iter,
-            ckpt=None): 
+    def eval(self, model, eval_iter, ckpt=None):
         '''
         model: a FewShotREModel instance
-        B: Batch size
-        N: Num of classes for each batch
-        K: Num of instances for each class in the support set
-        Q: Num of instances for each class in the query set
         eval_iter: Num of iterations
         ckpt: Checkpoint path. Set as None if using current model parameters.
-        return: Accuracy
+        return: Precision, recall, F1, and confusion matrix
         '''
         print("")
-        
         model.eval()
+
         if ckpt is None:
             print("Use val dataset")
             eval_dataset = self.val_data_loader
@@ -535,19 +528,20 @@ class FewShotNERFramework:
                     own_state[name].copy_(param)
             eval_dataset = self.test_data_loader
 
-        pred_cnt = 0 # pred entity cnt
-        label_cnt = 0 # true label entity cnt
-        correct_cnt = 0 # correct predicted entity cnt
-        print("WE ARE HERE")
-        print(len(eval_dataset))
+        pred_cnt = 0
+        label_cnt = 0
+        correct_cnt = 0
+        true_labels = []
+        predicted_labels = []
 
-        fp_cnt = 0 # misclassify O as I-
-        fn_cnt = 0 # misclassify I- as O
-        total_token_cnt = 0 # total token cnt
-        within_cnt = 0 # span correct but of wrong fine-grained type 
-        outer_cnt = 0 # span correct but of wrong coarse-grained type
-        total_span_cnt = 0 # span correct
+        fp_cnt = 0
+        fn_cnt = 0
+        total_token_cnt = 0
+        within_cnt = 0
+        outer_cnt = 0
+        total_span_cnt = 0
 
+        label_metrics = dict()  # <- initialized here to accumulate across batches
         eval_iter = min(eval_iter, len(eval_dataset))
 
         with torch.no_grad():
@@ -561,27 +555,46 @@ class FewShotNERFramework:
                                 support[k] = support[k].cuda()
                                 query[k] = query[k].cuda()
                         label = label.cuda()
+
                     logits, pred = model(support, query)
                     if self.viterbi:
                         pred = self.viterbi_decode(logits, query['label'])
 
+                    true_label_names = [query['label2tag'][0].get(id.item(), 'O') for id in label.cpu().numpy()]
+                    predicted_label_names = [query['label2tag'][0].get(id.item(), 'O') for id in pred.cpu().numpy()]
+
+                    true_labels.extend(true_label_names)
+                    predicted_labels.extend(predicted_label_names)
+
                     tmp_pred_cnt, tmp_label_cnt, correct = model.metrics_by_entity(pred, label)
                     fp, fn, token_cnt, within, outer, total_span = model.error_analysis(pred, label, query)
+
                     pred_cnt += tmp_pred_cnt
                     label_cnt += tmp_label_cnt
                     correct_cnt += correct
-
-                    fn_cnt += self.item(fn.data)
                     fp_cnt += self.item(fp.data)
+                    fn_cnt += self.item(fn.data)
                     total_token_cnt += token_cnt
                     outer_cnt += outer
                     within_cnt += within
                     total_span_cnt += total_span
 
+                    # Update label metrics dynamically
+                    for true_label, pred_label in zip(true_label_names, predicted_label_names):
+                        for lbl in [true_label, pred_label]:
+                            if lbl not in label_metrics:
+                                label_metrics[lbl] = {"TP": 0, "FP": 0, "TN": 0, "FN": 0}
+                        if true_label == pred_label:
+                            label_metrics[true_label]["TP"] += 1
+                        else:
+                            label_metrics[true_label]["FN"] += 1
+                            label_metrics[pred_label]["FP"] += 1
+
                     if it + 1 == eval_iter:
                         break
                     it += 1
 
+            # Calculate precision, recall, F1 score
             epsilon = 1e-8
             precision = correct_cnt / (pred_cnt + epsilon)
             recall = correct_cnt / (label_cnt + epsilon)
@@ -590,12 +603,23 @@ class FewShotNERFramework:
             fn_error = fn_cnt / total_token_cnt
             within_error = within_cnt / (total_span_cnt + epsilon)
             outer_error = outer_cnt / (total_span_cnt + epsilon)
-            with open(self.output_file_name, "a", encoding = "utf-8") as writer: # MOVED this here, before it was inside the training loop
-                # writer.write(f"Number of sentences: {number_sen}\n\n")
+
+            # Log per-label confusion matrix
+            with open(self.output_file_name, "a", encoding="utf-8") as writer:
                 writer.write(f"f1: {f1}\n\n")
                 writer.write(f"precision: {precision}\n\n")
                 writer.write(f"recall: {recall}\n\n")
-            sys.stdout.write('[EVAL] step: {0:4} | [ENTITY] precision: {1:3.4f}, recall: {2:3.4f}, f1: {3:3.4f}'.format(it + 1, precision, recall, f1) + '\r')
+                writer.write("***** Per-label Confusion Matrix *****\n")
+                for label in sorted(label_metrics.keys()):
+                    counts = label_metrics[label]
+                    writer.write("Label: {} | TP: {} | FP: {} | TN: {} | FN: {}\n".format(
+                        label, counts["TP"], counts["FP"], counts["TN"], counts["FN"]
+                    ))
+                writer.write("\n")
+
+            sys.stdout.write('[EVAL] step: {0:4} | [ENTITY] precision: {1:3.4f}, recall: {2:3.4f}, f1: {3:3.4f}'.format(
+                it + 1, precision, recall, f1) + '\r')
             sys.stdout.flush()
             print("")
+
         return precision, recall, f1, fp_error, fn_error, within_error, outer_error
