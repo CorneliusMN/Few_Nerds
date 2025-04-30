@@ -7,6 +7,7 @@ def file_to_lists(path, labels):
     """
     with open(path, "r") as f:
         text = f.read()
+    text = text.replace("f1:", "f1 =")
     blocks = re.split(r'(?=Number of sentences:)', text)
     sentences = []
     total_f1 = []
