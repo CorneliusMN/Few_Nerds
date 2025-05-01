@@ -270,24 +270,23 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
             writer.write("\n")
     tp_dict, fp_dict, fn_dict = per_label_confusion_counts(preds_list, out_label_list, metric)
 
-    # Assuming you already have the tp_dict, fp_dict, fn_dict populated
-with open(output_file_name, "a") as writer:
-    writer.write("\n***** Per-Entity Confusion Matrix *****\n")
-    
-    # Iterate over all tags (entity labels) sorted
-    for tag in sorted(set(tp_dict) | set(fp_dict) | set(fn_dict)):
-        tp = tp_dict.get(tag, 0)
-        fp = fp_dict.get(tag, 0)
-        fn = fn_dict.get(tag, 0)
+    with open(args.output_file_name, "a") as writer:
+        writer.write("\n***** Per-Entity Confusion Matrix *****\n")
         
-        # Logging using the logger (optional)
-        logger.info("Entity: %s | TP: %d | FP: %d | FN: %d", tag, tp, fp, fn)
-        
-        # Writing the results to the file in the requested format
-        writer.write("Entity: {} | TP: {} | FP: {} | FN: {}\n".format(
-            tag, tp, fp, fn
-        ))
-    writer.write("\n")
+        # Iterate over all tags (entity labels) sorted
+        for tag in sorted(set(tp_dict) | set(fp_dict) | set(fn_dict)):
+            tp = tp_dict.get(tag, 0)
+            fp = fp_dict.get(tag, 0)
+            fn = fn_dict.get(tag, 0)
+            
+            # Logging using the logger (optional)
+            logger.info("Entity: %s | TP: %d | FP: %d | FN: %d", tag, tp, fp, fn)
+            
+            # Writing the results to the output file
+            writer.write("Entity: {} | TP: {} | FP: {} | FN: {}\n".format(
+                tag, tp, fp, fn
+            ))
+        writer.write("\n")
 
 
     return results, preds_list
