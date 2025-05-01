@@ -504,122 +504,251 @@ class FewShotNERFramework:
                 pred.append(label-1)
         return torch.tensor(pred).cuda()
 
-    def eval(self, model, eval_iter, ckpt=None):
-        '''
-        model: a FewShotREModel instance
-        eval_iter: Num of iterations
-        ckpt: Checkpoint path. Set as None if using current model parameters.
-        return: Precision, recall, F1, and confusion matrix
-        '''
+    # def eval(self, model, eval_iter, ckpt=None):
+    #     '''
+    #     model: a FewShotREModel instance
+    #     eval_iter: Num of iterations
+    #     ckpt: Checkpoint path. Set as None if using current model parameters.
+    #     return: Precision, recall, F1, and confusion matrix
+    #     '''
+    #     print("")
+    #     model.eval()
+
+    #     if ckpt is None:
+    #         print("Use val dataset")
+    #         eval_dataset = self.val_data_loader
+    #     else:
+    #         print("Use test dataset")
+    #         if ckpt != 'none':
+    #             state_dict = self.__load_model__(ckpt)['state_dict']
+    #             own_state = model.state_dict()
+    #             for name, param in state_dict.items():
+    #                 if name not in own_state:
+    #                     continue
+    #                 own_state[name].copy_(param)
+    #         eval_dataset = self.test_data_loader
+
+    #     pred_cnt = 0
+    #     label_cnt = 0
+    #     correct_cnt = 0
+    #     true_labels = []
+    #     predicted_labels = []
+
+    #     fp_cnt = 0
+    #     fn_cnt = 0
+    #     total_token_cnt = 0
+    #     within_cnt = 0
+    #     outer_cnt = 0
+    #     total_span_cnt = 0
+
+    #     label_metrics = dict()  # <- initialized here to accumulate across batches
+    #     eval_iter = min(eval_iter, len(eval_dataset))
+
+    #     with torch.no_grad():
+    #         it = 0
+    #         while it + 1 < eval_iter:
+    #             for _, (support, query) in enumerate(eval_dataset):
+    #                 label = torch.cat(query['label'], 0)
+    #                 if torch.cuda.is_available():
+    #                     for k in support:
+    #                         if k != 'label' and k != 'sentence_num':
+    #                             support[k] = support[k].cuda()
+    #                             query[k] = query[k].cuda()
+    #                     label = label.cuda()
+
+    #                 logits, pred = model(support, query)
+    #                 if self.viterbi:
+    #                     pred = self.viterbi_decode(logits, query['label'])
+
+    #                 true_label_names = [query['label2tag'][0].get(id.item(), 'O') for id in label.cpu().numpy()]
+    #                 predicted_label_names = [query['label2tag'][0].get(id.item(), 'O') for id in pred.cpu().numpy()]
+
+    #                 true_labels.extend(true_label_names)
+    #                 predicted_labels.extend(predicted_label_names)
+
+    #                 tmp_pred_cnt, tmp_label_cnt, correct = model.metrics_by_entity(pred, label)
+    #                 fp, fn, token_cnt, within, outer, total_span = model.error_analysis(pred, label, query)
+
+    #                 pred_cnt += tmp_pred_cnt
+    #                 label_cnt += tmp_label_cnt
+    #                 correct_cnt += correct
+    #                 fp_cnt += self.item(fp.data)
+    #                 fn_cnt += self.item(fn.data)
+    #                 total_token_cnt += token_cnt
+    #                 outer_cnt += outer
+    #                 within_cnt += within
+    #                 total_span_cnt += total_span
+
+    #                 # Update label metrics dynamically
+    #                 for true_label, pred_label in zip(true_label_names, predicted_label_names):
+    #                     for lbl in [true_label, pred_label]:
+    #                         if lbl not in label_metrics:
+    #                             label_metrics[lbl] = {"TP": 0, "FP": 0, "TN": 0, "FN": 0}
+    #                     if true_label == pred_label:
+    #                         label_metrics[true_label]["TP"] += 1
+    #                     else:
+    #                         label_metrics[true_label]["FN"] += 1
+    #                         label_metrics[pred_label]["FP"] += 1
+
+    #                 if it + 1 == eval_iter:
+    #                     break
+    #                 it += 1
+
+    #         # Calculate precision, recall, F1 score
+    #         epsilon = 1e-8
+    #         precision = correct_cnt / (pred_cnt + epsilon)
+    #         recall = correct_cnt / (label_cnt + epsilon)
+    #         f1 = 2 * precision * recall / (precision + recall + epsilon)
+    #         fp_error = fp_cnt / total_token_cnt
+    #         fn_error = fn_cnt / total_token_cnt
+    #         within_error = within_cnt / (total_span_cnt + epsilon)
+    #         outer_error = outer_cnt / (total_span_cnt + epsilon)
+
+    #         # Log per-label confusion matrix
+    #         with open(self.output_file_name, "a", encoding="utf-8") as writer:
+    #             writer.write(f"f1: {f1}\n\n")
+    #             writer.write(f"precision: {precision}\n\n")
+    #             writer.write(f"recall: {recall}\n\n")
+    #             writer.write("***** Per-label Confusion Matrix *****\n")
+    #             for label in sorted(label_metrics.keys()):
+    #                 counts = label_metrics[label]
+    #                 writer.write("Label: {} | TP: {} | FP: {} | TN: {} | FN: {}\n".format(
+    #                     label, counts["TP"], counts["FP"], counts["TN"], counts["FN"]
+    #                 ))
+    #             writer.write("\n")
+
+    #         sys.stdout.write('[EVAL] step: {0:4} | [ENTITY] precision: {1:3.4f}, recall: {2:3.4f}, f1: {3:3.4f}'.format(
+    #             it + 1, precision, recall, f1) + '\r')
+    #         sys.stdout.flush()
+    #         print("")
+
+    #     return precision, recall, f1, fp_error, fn_error, within_error, outer_error
+
+    def eval(self, model, eval_iter, ckpt = None):
+        """
+        Evaluate the model on validation or test data.
+        Returns precision, recall, f1, token-level FP error, FN error, within-error, outer-error.
+        """
         print("")
         model.eval()
 
+        # Choose validation or test set
         if ckpt is None:
             print("Use val dataset")
             eval_dataset = self.val_data_loader
         else:
             print("Use test dataset")
-            if ckpt != 'none':
-                state_dict = self.__load_model__(ckpt)['state_dict']
+            if ckpt != "none":
+                state_dict = self.__load_model__(ckpt)["state_dict"]
                 own_state = model.state_dict()
                 for name, param in state_dict.items():
-                    if name not in own_state:
-                        continue
-                    own_state[name].copy_(param)
+                    if name in own_state:
+                        own_state[name].copy_(param)
             eval_dataset = self.test_data_loader
 
-        pred_cnt = 0
-        label_cnt = 0
-        correct_cnt = 0
+        # Containers for metrics
+        pred_cnt = label_cnt = correct_cnt = 0
         true_labels = []
         predicted_labels = []
+        fp_cnt = fn_cnt = total_token_cnt = 0
+        within_cnt = outer_cnt = total_span_cnt = 0
+        label_metrics = {}
 
-        fp_cnt = 0
-        fn_cnt = 0
-        total_token_cnt = 0
-        within_cnt = 0
-        outer_cnt = 0
-        total_span_cnt = 0
-
-        label_metrics = dict()  # <- initialized here to accumulate across batches
         eval_iter = min(eval_iter, len(eval_dataset))
 
         with torch.no_grad():
             it = 0
             while it + 1 < eval_iter:
                 for _, (support, query) in enumerate(eval_dataset):
+                    # Prepare labels
                     label = torch.cat(query['label'], 0)
                     if torch.cuda.is_available():
                         for k in support:
-                            if k != 'label' and k != 'sentence_num':
+                            if k not in ['label', 'sentence_num']:
                                 support[k] = support[k].cuda()
                                 query[k] = query[k].cuda()
                         label = label.cuda()
 
+                    # Forward
                     logits, pred = model(support, query)
                     if self.viterbi:
                         pred = self.viterbi_decode(logits, query['label'])
 
-                    true_label_names = [query['label2tag'][0].get(id.item(), 'O') for id in label.cpu().numpy()]
-                    predicted_label_names = [query['label2tag'][0].get(id.item(), 'O') for id in pred.cpu().numpy()]
+                    # Convert to tag names
+                    true_names = [query['label2tag'][0].get(int(l), 'O') for l in label.cpu().numpy()]
+                    pred_names = [query['label2tag'][0].get(int(p), 'O') for p in pred.cpu().numpy()]
+                    true_labels.extend(true_names)
+                    predicted_labels.extend(pred_names)
 
-                    true_labels.extend(true_label_names)
-                    predicted_labels.extend(predicted_label_names)
-
+                    # Entity-level counts
                     tmp_pred_cnt, tmp_label_cnt, correct = model.metrics_by_entity(pred, label)
-                    fp, fn, token_cnt, within, outer, total_span = model.error_analysis(pred, label, query)
-
                     pred_cnt += tmp_pred_cnt
                     label_cnt += tmp_label_cnt
                     correct_cnt += correct
-                    fp_cnt += self.item(fp.data)
-                    fn_cnt += self.item(fn.data)
+
+                    # Token-level FP/FN
+                    fp, fn, token_cnt, within, outer, total_span = model.error_analysis(pred, label, query)
+                    fp_cnt += float(fp)
+                    fn_cnt += float(fn)
                     total_token_cnt += token_cnt
-                    outer_cnt += outer
                     within_cnt += within
+                    outer_cnt += outer
                     total_span_cnt += total_span
 
-                    # Update label metrics dynamically
-                    for true_label, pred_label in zip(true_label_names, predicted_label_names):
-                        for lbl in [true_label, pred_label]:
+                    # Update per-token confusion for each label
+                    for t, p in zip(true_names, pred_names):
+                        for lbl in [t, p]:
                             if lbl not in label_metrics:
-                                label_metrics[lbl] = {"TP": 0, "FP": 0, "TN": 0, "FN": 0}
-                        if true_label == pred_label:
-                            label_metrics[true_label]["TP"] += 1
+                                label_metrics[lbl] = {"TP":0, "FP":0, "TN":0, "FN":0}
+                        if t == p:
+                            label_metrics[t]["TP"] += 1
                         else:
-                            label_metrics[true_label]["FN"] += 1
-                            label_metrics[pred_label]["FP"] += 1
-
+                            label_metrics[t]["FN"] += 1
+                            label_metrics[p]["FP"] += 1
                     if it + 1 == eval_iter:
                         break
                     it += 1
 
-            # Calculate precision, recall, F1 score
-            epsilon = 1e-8
-            precision = correct_cnt / (pred_cnt + epsilon)
-            recall = correct_cnt / (label_cnt + epsilon)
-            f1 = 2 * precision * recall / (precision + recall + epsilon)
-            fp_error = fp_cnt / total_token_cnt
-            fn_error = fn_cnt / total_token_cnt
-            within_error = within_cnt / (total_span_cnt + epsilon)
-            outer_error = outer_cnt / (total_span_cnt + epsilon)
+        # Compute overall precision/recall/f1
+        eps = 1e-8
+        precision = correct_cnt / (pred_cnt + eps)
+        recall = correct_cnt / (label_cnt + eps)
+        f1 = 2 * precision * recall / (precision + recall + eps)
+        fp_error = fp_cnt / total_token_cnt
+        fn_error = fn_cnt / total_token_cnt
+        within_error = within_cnt / (total_span_cnt + eps)
+        outer_error = outer_cnt / (total_span_cnt + eps)
 
-            # Log per-label confusion matrix
-            with open(self.output_file_name, "a", encoding="utf-8") as writer:
-                writer.write(f"f1: {f1}\n\n")
-                writer.write(f"precision: {precision}\n\n")
-                writer.write(f"recall: {recall}\n\n")
-                writer.write("***** Per-label Confusion Matrix *****\n")
-                for label in sorted(label_metrics.keys()):
-                    counts = label_metrics[label]
-                    writer.write("Label: {} | TP: {} | FP: {} | TN: {} | FN: {}\n".format(
-                        label, counts["TP"], counts["FP"], counts["TN"], counts["FN"]
-                    ))
-                writer.write("\n")
+        # Write overall and per-token confusion
+        with open(self.output_file_name, "a", encoding="utf-8") as writer:
+            writer.write(f"f1: {f1}\n\n")
+            writer.write(f"precision: {precision}\n\n")
+            writer.write(f"recall: {recall}\n\n")
+            writer.write("***** Per-token Confusion Matrix *****\n")
+            for lbl in sorted(label_metrics):
+                cm = label_metrics[lbl]
+                writer.write(f"Label: {lbl} | TP: {cm['TP']} | FP: {cm['FP']} | TN: {cm['TN']} | FN: {cm['FN']}\n")
+            writer.write("\n")
 
-            sys.stdout.write('[EVAL] step: {0:4} | [ENTITY] precision: {1:3.4f}, recall: {2:3.4f}, f1: {3:3.4f}'.format(
-                it + 1, precision, recall, f1) + '\r')
-            sys.stdout.flush()
-            print("")
+        # Span-level confusion per entity type
+        from .metric import Metrics
+        metric = Metrics()
+        pred_spans = metric.__get_class_span_dict__(predicted_labels, is_string=True)
+        true_spans = metric.__get_class_span_dict__(true_labels, is_string=True)
+        with open(self.output_file_name, "a", encoding = "utf-8") as writer:
+            writer.write("***** Per-Label Span Confusion Matrix *****\n")
+            all_labels = set(pred_spans) | set(true_spans)
+            for ent in sorted(all_labels):
+                pred_set = set(pred_spans.get(ent, []))
+                true_set = set(true_spans.get(ent, []))
+                tp = len(pred_set & true_set)
+                fp = len(pred_set - true_set)
+                fn = len(true_set - pred_set)
+                writer.write(f"Label: {ent} | TP: {tp} | FP: {fp} | FN: {fn}\n")
+            writer.write("\n")
+
+        sys.stdout.write(f"[EVAL] step: {it:4} | [ENTITY] precision: {precision:3.4f}, recall: {recall:3.4f}, f1: {f1:3.4f}\r")
+        sys.stdout.flush()
+        print("")
 
         return precision, recall, f1, fp_error, fn_error, within_error, outer_error
