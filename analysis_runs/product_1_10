@@ -1,0 +1,4462 @@
+Number of sentences: 80
+Step: 9
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-car | TP: 0 | FP: 0 | FN: 3645
+Label: product-weapon | TP: 0 | FP: 0 | FN: 3072
+
+Number of sentences: 160
+Step: 19
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-car | TP: 0 | FP: 0 | FN: 3645
+Label: product-weapon | TP: 0 | FP: 0 | FN: 3072
+
+Number of sentences: 240
+Step: 29
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 3722 | FN: 0
+Label: product-car | TP: 0 | FP: 0 | FN: 3645
+Label: product-food | TP: 0 | FP: 128 | FN: 0
+Label: product-other | TP: 0 | FP: 2949 | FN: 0
+Label: product-weapon | TP: 0 | FP: 0 | FN: 3072
+
+Number of sentences: 320
+Step: 39
+f1 = 0.0
+
+precision = 0.0
+
+recall = 0.0
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 3590 | FN: 0
+Label: product-car | TP: 0 | FP: 0 | FN: 3645
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 60 | FN: 0
+Label: product-ship | TP: 0 | FP: 35 | FN: 0
+Label: product-weapon | TP: 0 | FP: 0 | FN: 3072
+
+Number of sentences: 400
+Step: 49
+f1 = 0.1641168244885002
+
+precision = 0.246640788294277
+
+recall = 0.12297156468643297
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 238 | FN: 0
+Label: product-car | TP: 809 | FP: 2118 | FN: 2836
+Label: product-other | TP: 0 | FP: 138 | FN: 0
+Label: product-weapon | TP: 17 | FP: 29 | FN: 3055
+
+Number of sentences: 480
+Step: 59
+f1 = 0.23870919709256203
+
+precision = 0.2362893815632493
+
+recall = 0.24117909781116395
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 3807 | FN: 0
+Label: product-car | TP: 1428 | FP: 753 | FN: 2217
+Label: product-food | TP: 0 | FP: 96 | FN: 0
+Label: product-other | TP: 0 | FP: 293 | FN: 0
+Label: product-ship | TP: 0 | FP: 3 | FN: 0
+Label: product-weapon | TP: 192 | FP: 284 | FN: 2880
+
+Number of sentences: 560
+Step: 69
+f1 = 0.40824518916977864
+
+precision = 0.4239897370102245
+
+recall = 0.39362810778562807
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 1524 | FN: 0
+Label: product-car | TP: 2488 | FP: 1145 | FN: 1157
+Label: product-food | TP: 0 | FP: 56 | FN: 0
+Label: product-other | TP: 0 | FP: 41 | FN: 0
+Label: product-ship | TP: 0 | FP: 552 | FN: 0
+Label: product-software | TP: 0 | FP: 104 | FN: 0
+Label: product-weapon | TP: 156 | FP: 170 | FN: 2916
+
+Number of sentences: 640
+Step: 79
+f1 = 0.4620335691169415
+
+precision = 0.5556485355636911
+
+recall = 0.39541461962126634
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 422 | FN: 0
+Label: product-car | TP: 2631 | FP: 1091 | FN: 1014
+Label: product-other | TP: 0 | FP: 328 | FN: 0
+Label: product-ship | TP: 0 | FP: 21 | FN: 0
+Label: product-software | TP: 0 | FP: 182 | FN: 0
+Label: product-weapon | TP: 25 | FP: 80 | FN: 3047
+
+Number of sentences: 720
+Step: 89
+f1 = 0.4643912878693696
+
+precision = 0.5829959514156928
+
+recall = 0.3858865564978623
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 479 | FN: 0
+Label: product-car | TP: 2404 | FP: 887 | FN: 1241
+Label: product-other | TP: 0 | FP: 225 | FN: 0
+Label: product-ship | TP: 0 | FP: 36 | FN: 0
+Label: product-software | TP: 0 | FP: 5 | FN: 0
+Label: product-weapon | TP: 188 | FP: 222 | FN: 2884
+
+Number of sentences: 800
+Step: 99
+f1 = 0.5705435454089057
+
+precision = 0.5653317743341635
+
+recall = 0.5758523150207298
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 261 | FN: 0
+Label: product-car | TP: 2454 | FP: 832 | FN: 1191
+Label: product-food | TP: 0 | FP: 11 | FN: 0
+Label: product-other | TP: 0 | FP: 697 | FN: 0
+Label: product-ship | TP: 0 | FP: 91 | FN: 0
+Label: product-weapon | TP: 1414 | FP: 1082 | FN: 1658
+
+Number of sentences: 880
+Step: 109
+f1 = 0.5941130856347375
+
+precision = 0.6192475375413866
+
+recall = 0.5709394074727245
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 484 | FN: 0
+Label: product-car | TP: 2463 | FP: 734 | FN: 1182
+Label: product-other | TP: 0 | FP: 109 | FN: 0
+Label: product-ship | TP: 0 | FP: 4 | FN: 0
+Label: product-software | TP: 0 | FP: 35 | FN: 0
+Label: product-weapon | TP: 1372 | FP: 992 | FN: 1700
+
+Number of sentences: 960
+Step: 119
+f1 = 0.5706138112197146
+
+precision = 0.547469220245489
+
+recall = 0.5958016971853569
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 1046 | FN: 0
+Label: product-car | TP: 2499 | FP: 696 | FN: 1146
+Label: product-other | TP: 0 | FP: 122 | FN: 0
+Label: product-ship | TP: 0 | FP: 163 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1503 | FP: 1279 | FN: 1569
+
+Number of sentences: 1040
+Step: 129
+f1 = 0.6191932794935386
+
+precision = 0.592915531334342
+
+recall = 0.6479082923914725
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 227 | FN: 0
+Label: product-car | TP: 2623 | FP: 754 | FN: 1022
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 518 | FN: 0
+Label: product-ship | TP: 0 | FP: 89 | FN: 0
+Label: product-software | TP: 0 | FP: 116 | FN: 0
+Label: product-weapon | TP: 1729 | FP: 1280 | FN: 1343
+
+Number of sentences: 1120
+Step: 139
+f1 = 0.6352339650445102
+
+precision = 0.6072495248430528
+
+recall = 0.6659222867341582
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 295 | FN: 0
+Label: product-car | TP: 2705 | FP: 1051 | FN: 940
+Label: product-food | TP: 0 | FP: 15 | FN: 0
+Label: product-other | TP: 0 | FP: 10 | FN: 0
+Label: product-ship | TP: 0 | FP: 87 | FN: 0
+Label: product-weapon | TP: 1768 | FP: 1435 | FN: 1304
+
+Number of sentences: 1200
+Step: 149
+f1 = 0.5561757949992018
+
+precision = 0.5893035654771921
+
+recall = 0.5265743635543746
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 674 | FN: 0
+Label: product-car | TP: 2199 | FP: 553 | FN: 1446
+Label: product-food | TP: 0 | FP: 56 | FN: 0
+Label: product-other | TP: 0 | FP: 227 | FN: 0
+Label: product-ship | TP: 0 | FP: 132 | FN: 0
+Label: product-weapon | TP: 1338 | FP: 823 | FN: 1734
+
+Number of sentences: 1280
+Step: 159
+f1 = 0.594228274907303
+
+precision = 0.6081670822933165
+
+recall = 0.5809140985550381
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 402 | FN: 0
+Label: product-car | TP: 2211 | FP: 476 | FN: 1434
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 475 | FN: 0
+Label: product-ship | TP: 0 | FP: 63 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1691 | FP: 1094 | FN: 1381
+
+Number of sentences: 1360
+Step: 169
+f1 = 0.6512951427572979
+
+precision = 0.6386662850591891
+
+recall = 0.6644335268711263
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 451 | FN: 0
+Label: product-car | TP: 2726 | FP: 780 | FN: 919
+Label: product-food | TP: 0 | FP: 38 | FN: 0
+Label: product-other | TP: 0 | FP: 66 | FN: 0
+Label: product-ship | TP: 0 | FP: 87 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1737 | FP: 1101 | FN: 1335
+
+Number of sentences: 1440
+Step: 179
+f1 = 0.6429431186830219
+
+precision = 0.6498859315579469
+
+recall = 0.6361470894735207
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 426 | FN: 0
+Label: product-car | TP: 2899 | FP: 873 | FN: 746
+Label: product-food | TP: 0 | FP: 68 | FN: 0
+Label: product-other | TP: 0 | FP: 66 | FN: 0
+Label: product-ship | TP: 0 | FP: 67 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1374 | FP: 800 | FN: 1698
+
+Number of sentences: 1520
+Step: 189
+f1 = 0.6312662408215918
+
+precision = 0.6298162418485035
+
+recall = 0.6327229417885474
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 264 | FN: 0
+Label: product-car | TP: 2601 | FP: 589 | FN: 1044
+Label: product-other | TP: 0 | FP: 466 | FN: 0
+Label: product-ship | TP: 0 | FP: 105 | FN: 0
+Label: product-weapon | TP: 1649 | FP: 1074 | FN: 1423
+
+Number of sentences: 1600
+Step: 199
+f1 = 0.6465401657118409
+
+precision = 0.6143431635380505
+
+recall = 0.6822986452275088
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 68 | FN: 0
+Label: product-car | TP: 2656 | FP: 915 | FN: 989
+Label: product-food | TP: 0 | FP: 7 | FN: 0
+Label: product-other | TP: 0 | FP: 465 | FN: 0
+Label: product-ship | TP: 0 | FP: 90 | FN: 0
+Label: product-software | TP: 0 | FP: 7 | FN: 0
+Label: product-weapon | TP: 1927 | FP: 1325 | FN: 1145
+
+Number of sentences: 1680
+Step: 209
+f1 = 0.6317502539132989
+
+precision = 0.6278488457570536
+
+recall = 0.6357004615146111
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 440 | FN: 0
+Label: product-car | TP: 2778 | FP: 824 | FN: 867
+Label: product-food | TP: 0 | FP: 8 | FN: 0
+Label: product-other | TP: 0 | FP: 245 | FN: 0
+Label: product-ship | TP: 0 | FP: 33 | FN: 0
+Label: product-software | TP: 0 | FP: 5 | FN: 0
+Label: product-weapon | TP: 1492 | FP: 976 | FN: 1580
+
+Number of sentences: 1760
+Step: 219
+f1 = 0.6186767648184898
+
+precision = 0.5850583864111133
+
+recall = 0.6563942236107543
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 308 | FN: 0
+Label: product-car | TP: 2790 | FP: 977 | FN: 855
+Label: product-food | TP: 0 | FP: 54 | FN: 0
+Label: product-other | TP: 0 | FP: 269 | FN: 0
+Label: product-ship | TP: 0 | FP: 433 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1619 | FP: 1082 | FN: 1453
+
+Number of sentences: 1840
+Step: 229
+f1 = 0.604489451579509
+
+precision = 0.6139085047580383
+
+recall = 0.5953550692264473
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 267 | FN: 0
+Label: product-car | TP: 2415 | FP: 509 | FN: 1230
+Label: product-food | TP: 0 | FP: 30 | FN: 0
+Label: product-other | TP: 0 | FP: 629 | FN: 0
+Label: product-ship | TP: 0 | FP: 91 | FN: 0
+Label: product-software | TP: 0 | FP: 7 | FN: 0
+Label: product-weapon | TP: 1584 | FP: 982 | FN: 1488
+
+Number of sentences: 1920
+Step: 239
+f1 = 0.6357681852406816
+
+precision = 0.609223632145437
+
+recall = 0.6647312788437327
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 546 | FN: 0
+Label: product-car | TP: 2774 | FP: 745 | FN: 871
+Label: product-food | TP: 0 | FP: 67 | FN: 0
+Label: product-other | TP: 0 | FP: 252 | FN: 0
+Label: product-ship | TP: 0 | FP: 160 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1691 | FP: 1092 | FN: 1381
+
+Number of sentences: 2000
+Step: 249
+f1 = 0.5961453532461009
+
+precision = 0.5892104115157929
+
+recall = 0.6032454965005163
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 730 | FN: 0
+Label: product-car | TP: 2513 | FP: 551 | FN: 1132
+Label: product-food | TP: 0 | FP: 23 | FN: 0
+Label: product-other | TP: 0 | FP: 468 | FN: 0
+Label: product-ship | TP: 0 | FP: 78 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1539 | FP: 973 | FN: 1533
+
+Number of sentences: 2080
+Step: 259
+f1 = 0.4738749572473688
+
+precision = 0.48077217710972764
+
+recall = 0.46717284501940276
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 110 | FN: 0
+Label: product-car | TP: 1897 | FP: 571 | FN: 1748
+Label: product-food | TP: 0 | FP: 17 | FN: 0
+Label: product-other | TP: 0 | FP: 1725 | FN: 0
+Label: product-ship | TP: 0 | FP: 91 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1241 | FP: 871 | FN: 1831
+
+Number of sentences: 2160
+Step: 269
+f1 = 0.6461256813961727
+
+precision = 0.662392494135008
+
+recall = 0.6306386779803028
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 372 | FN: 0
+Label: product-car | TP: 2764 | FP: 672 | FN: 881
+Label: product-food | TP: 0 | FP: 24 | FN: 0
+Label: product-other | TP: 0 | FP: 113 | FN: 0
+Label: product-ship | TP: 0 | FP: 47 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1472 | FP: 929 | FN: 1600
+
+Number of sentences: 2240
+Step: 279
+f1 = 0.6646078663065877
+
+precision = 0.642014707921962
+
+recall = 0.6888491886248491
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 211 | FN: 0
+Label: product-car | TP: 2761 | FP: 793 | FN: 884
+Label: product-food | TP: 0 | FP: 39 | FN: 0
+Label: product-other | TP: 0 | FP: 454 | FN: 0
+Label: product-ship | TP: 0 | FP: 29 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1866 | FP: 1050 | FN: 1206
+
+Number of sentences: 2320
+Step: 289
+f1 = 0.6570110917039838
+
+precision = 0.6366429269646185
+
+recall = 0.6787256215562324
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 155 | FN: 0
+Label: product-car | TP: 2698 | FP: 779 | FN: 947
+Label: product-food | TP: 0 | FP: 35 | FN: 0
+Label: product-other | TP: 0 | FP: 566 | FN: 0
+Label: product-ship | TP: 0 | FP: 104 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1861 | FP: 959 | FN: 1211
+
+Number of sentences: 2400
+Step: 299
+f1 = 0.6523929421203819
+
+precision = 0.615445544553643
+
+recall = 0.6940598481454607
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 132 | FN: 0
+Label: product-car | TP: 2816 | FP: 1169 | FN: 829
+Label: product-food | TP: 0 | FP: 81 | FN: 0
+Label: product-other | TP: 0 | FP: 321 | FN: 0
+Label: product-ship | TP: 0 | FP: 160 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1846 | FP: 1048 | FN: 1226
+
+Number of sentences: 2480
+Step: 309
+f1 = 0.5833692324030766
+
+precision = 0.563462338742456
+
+recall = 0.6047342563635482
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 106 | FN: 0
+Label: product-car | TP: 2103 | FP: 495 | FN: 1542
+Label: product-food | TP: 0 | FP: 51 | FN: 0
+Label: product-other | TP: 0 | FP: 1315 | FN: 0
+Label: product-ship | TP: 0 | FP: 14 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1959 | FP: 1164 | FN: 1113
+
+Number of sentences: 2560
+Step: 319
+f1 = 0.6608311829364707
+
+precision = 0.6530968304730255
+
+recall = 0.6687509304739188
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 390 | FN: 0
+Label: product-car | TP: 2658 | FP: 543 | FN: 987
+Label: product-food | TP: 0 | FP: 39 | FN: 0
+Label: product-other | TP: 0 | FP: 405 | FN: 0
+Label: product-ship | TP: 0 | FP: 29 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1834 | FP: 978 | FN: 1238
+
+Number of sentences: 2640
+Step: 329
+f1 = 0.5944531608809395
+
+precision = 0.5969969969961006
+
+recall = 0.591930921541474
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 694 | FN: 0
+Label: product-car | TP: 2648 | FP: 558 | FN: 997
+Label: product-food | TP: 0 | FP: 42 | FN: 0
+Label: product-other | TP: 0 | FP: 303 | FN: 0
+Label: product-ship | TP: 0 | FP: 137 | FN: 0
+Label: product-weapon | TP: 1328 | FP: 950 | FN: 1744
+
+Number of sentences: 2720
+Step: 339
+f1 = 0.6122884536084628
+
+precision = 0.6274019684414507
+
+recall = 0.5978859609936015
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 542 | FN: 0
+Label: product-car | TP: 2814 | FP: 719 | FN: 831
+Label: product-food | TP: 0 | FP: 28 | FN: 0
+Label: product-other | TP: 0 | FP: 203 | FN: 0
+Label: product-ship | TP: 0 | FP: 72 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1202 | FP: 819 | FN: 1870
+
+Number of sentences: 2800
+Step: 349
+f1 = 0.7034985372751997
+
+precision = 0.6891332286153232
+
+recall = 0.7184755098991835
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 155 | FN: 0
+Label: product-car | TP: 2924 | FP: 764 | FN: 721
+Label: product-food | TP: 0 | FP: 34 | FN: 0
+Label: product-other | TP: 0 | FP: 160 | FN: 0
+Label: product-ship | TP: 0 | FP: 60 | FN: 0
+Label: product-software | TP: 0 | FP: 7 | FN: 0
+Label: product-weapon | TP: 1902 | FP: 997 | FN: 1170
+
+Number of sentences: 2880
+Step: 359
+f1 = 0.7094658552358262
+
+precision = 0.6948330002844778
+
+recall = 0.7247283013239173
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 148 | FN: 0
+Label: product-car | TP: 2893 | FP: 675 | FN: 752
+Label: product-food | TP: 0 | FP: 40 | FN: 0
+Label: product-other | TP: 0 | FP: 126 | FN: 0
+Label: product-ship | TP: 0 | FP: 62 | FN: 0
+Label: product-software | TP: 0 | FP: 7 | FN: 0
+Label: product-weapon | TP: 1975 | FP: 1080 | FN: 1097
+
+Number of sentences: 2960
+Step: 369
+f1 = 0.47824642482335905
+
+precision = 0.5406420123886979
+
+recall = 0.42876284055318037
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 202 | FN: 0
+Label: product-car | TP: 1149 | FP: 935 | FN: 2496
+Label: product-food | TP: 0 | FP: 12 | FN: 0
+Label: product-other | TP: 0 | FP: 333 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 8 | FN: 0
+Label: product-weapon | TP: 1731 | FP: 927 | FN: 1341
+
+Number of sentences: 3040
+Step: 379
+f1 = 0.6537540755246002
+
+precision = 0.6375212224099639
+
+recall = 0.6708351942821634
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 454 | FN: 0
+Label: product-car | TP: 2743 | FP: 700 | FN: 902
+Label: product-food | TP: 0 | FP: 29 | FN: 0
+Label: product-other | TP: 0 | FP: 344 | FN: 0
+Label: product-ship | TP: 0 | FP: 72 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1763 | FP: 961 | FN: 1309
+
+Number of sentences: 3120
+Step: 389
+f1 = 0.6730954626943371
+
+precision = 0.6707569485501615
+
+recall = 0.6754503498575622
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 307 | FN: 0
+Label: product-car | TP: 2856 | FP: 725 | FN: 789
+Label: product-food | TP: 0 | FP: 26 | FN: 0
+Label: product-other | TP: 0 | FP: 78 | FN: 0
+Label: product-ship | TP: 0 | FP: 109 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1681 | FP: 980 | FN: 1391
+
+Number of sentences: 3200
+Step: 399
+f1 = 0.6988926696264782
+
+precision = 0.6678876678867618
+
+recall = 0.7329164805705927
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 137 | FN: 0
+Label: product-car | TP: 2912 | FP: 882 | FN: 733
+Label: product-food | TP: 0 | FP: 47 | FN: 0
+Label: product-other | TP: 0 | FP: 145 | FN: 0
+Label: product-ship | TP: 0 | FP: 62 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2011 | FP: 1173 | FN: 1061
+
+Number of sentences: 3280
+Step: 409
+f1 = 0.6580710905724301
+
+precision = 0.6442732848371926
+
+recall = 0.6724728301314985
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 414 | FN: 0
+Label: product-car | TP: 2648 | FP: 674 | FN: 997
+Label: product-food | TP: 0 | FP: 61 | FN: 0
+Label: product-other | TP: 0 | FP: 203 | FN: 0
+Label: product-ship | TP: 0 | FP: 61 | FN: 0
+Label: product-software | TP: 0 | FP: 7 | FN: 0
+Label: product-weapon | TP: 1869 | FP: 1074 | FN: 1203
+
+Number of sentences: 3360
+Step: 419
+f1 = 0.6528655430516611
+
+precision = 0.6374468085097341
+
+recall = 0.6690486824465252
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 655 | FN: 0
+Label: product-car | TP: 2768 | FP: 625 | FN: 877
+Label: product-food | TP: 0 | FP: 18 | FN: 0
+Label: product-other | TP: 0 | FP: 131 | FN: 0
+Label: product-ship | TP: 0 | FP: 53 | FN: 0
+Label: product-software | TP: 0 | FP: 7 | FN: 0
+Label: product-weapon | TP: 1726 | FP: 1067 | FN: 1346
+
+Number of sentences: 3440
+Step: 429
+f1 = 0.6895126766839063
+
+precision = 0.6611558956132516
+
+recall = 0.7204108977211249
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 243 | FN: 0
+Label: product-car | TP: 2898 | FP: 764 | FN: 747
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 236 | FN: 0
+Label: product-ship | TP: 0 | FP: 39 | FN: 0
+Label: product-weapon | TP: 1941 | FP: 1188 | FN: 1131
+
+Number of sentences: 3520
+Step: 439
+f1 = 0.7084045534128643
+
+precision = 0.6790932677854989
+
+recall = 0.740360279885752
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 207 | FN: 0
+Label: product-car | TP: 2991 | FP: 891 | FN: 654
+Label: product-food | TP: 0 | FP: 18 | FN: 0
+Label: product-other | TP: 0 | FP: 51 | FN: 0
+Label: product-ship | TP: 0 | FP: 49 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1982 | FP: 1132 | FN: 1090
+
+Number of sentences: 3600
+Step: 449
+f1 = 0.6451565218747464
+
+precision = 0.6399589863766809
+
+recall = 0.6504391841586267
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 339 | FN: 0
+Label: product-car | TP: 2887 | FP: 894 | FN: 758
+Label: product-food | TP: 0 | FP: 22 | FN: 0
+Label: product-other | TP: 0 | FP: 191 | FN: 0
+Label: product-ship | TP: 0 | FP: 49 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1482 | FP: 961 | FN: 1590
+
+Number of sentences: 3680
+Step: 459
+f1 = 0.6524358447573074
+
+precision = 0.6519024970263795
+
+recall = 0.6529700759257809
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 297 | FN: 0
+Label: product-car | TP: 2746 | FP: 596 | FN: 899
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 447 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1640 | FP: 940 | FN: 1432
+
+Number of sentences: 3760
+Step: 469
+f1 = 0.6477878606908827
+
+precision = 0.6277056277047511
+
+recall = 0.6691975584328284
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 470 | FN: 0
+Label: product-car | TP: 2751 | FP: 655 | FN: 894
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 354 | FN: 0
+Label: product-ship | TP: 0 | FP: 122 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1744 | FP: 1059 | FN: 1328
+
+Number of sentences: 3840
+Step: 479
+f1 = 0.6274737173656894
+
+precision = 0.6114721672780284
+
+recall = 0.644335268720196
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 224 | FN: 0
+Label: product-car | TP: 2423 | FP: 524 | FN: 1222
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 875 | FN: 0
+Label: product-ship | TP: 0 | FP: 34 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1905 | FP: 1080 | FN: 1167
+
+Number of sentences: 3920
+Step: 489
+f1 = 0.672878290416941
+
+precision = 0.6534792368116534
+
+recall = 0.6934643442002479
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 195 | FN: 0
+Label: product-car | TP: 2708 | FP: 623 | FN: 937
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 452 | FN: 0
+Label: product-ship | TP: 0 | FP: 63 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1950 | FP: 1123 | FN: 1122
+
+Number of sentences: 4000
+Step: 499
+f1 = 0.690495290062643
+
+precision = 0.6769164759715719
+
+recall = 0.704630043172987
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 270 | FN: 0
+Label: product-car | TP: 2811 | FP: 606 | FN: 834
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 216 | FN: 0
+Label: product-ship | TP: 0 | FP: 80 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1922 | FP: 1075 | FN: 1150
+
+Number of sentences: 4080
+Step: 509
+f1 = 0.6937802449491836
+
+precision = 0.6738703339872666
+
+recall = 0.714902486227907
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 222 | FN: 0
+Label: product-car | TP: 2832 | FP: 614 | FN: 813
+Label: product-food | TP: 0 | FP: 14 | FN: 0
+Label: product-other | TP: 0 | FP: 333 | FN: 0
+Label: product-ship | TP: 0 | FP: 90 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1970 | FP: 1049 | FN: 1102
+
+Number of sentences: 4160
+Step: 519
+f1 = 0.685430216508022
+
+precision = 0.6733697213434741
+
+recall = 0.6979306237893436
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 178 | FN: 0
+Label: product-car | TP: 2869 | FP: 653 | FN: 776
+Label: product-food | TP: 0 | FP: 50 | FN: 0
+Label: product-other | TP: 0 | FP: 317 | FN: 0
+Label: product-ship | TP: 0 | FP: 99 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1819 | FP: 973 | FN: 1253
+
+Number of sentences: 4240
+Step: 529
+f1 = 0.623621115752862
+
+precision = 0.616189507338154
+
+recall = 0.6312341819255155
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 178 | FN: 0
+Label: product-car | TP: 2445 | FP: 545 | FN: 1200
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 883 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 17 | FN: 0
+Label: product-weapon | TP: 1795 | FP: 958 | FN: 1277
+
+Number of sentences: 4320
+Step: 539
+f1 = 0.6303083780128806
+
+precision = 0.6232896652101554
+
+recall = 0.6374869733502494
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 209 | FN: 0
+Label: product-car | TP: 2324 | FP: 482 | FN: 1321
+Label: product-other | TP: 0 | FP: 851 | FN: 0
+Label: product-ship | TP: 0 | FP: 34 | FN: 0
+Label: product-software | TP: 0 | FP: 15 | FN: 0
+Label: product-weapon | TP: 1958 | FP: 997 | FN: 1114
+
+Number of sentences: 4400
+Step: 549
+f1 = 0.693787304307454
+
+precision = 0.6869527145348994
+
+recall = 0.7007592675291041
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 267 | FN: 0
+Label: product-car | TP: 2738 | FP: 572 | FN: 907
+Label: product-food | TP: 0 | FP: 26 | FN: 0
+Label: product-other | TP: 0 | FP: 221 | FN: 0
+Label: product-ship | TP: 0 | FP: 32 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1969 | FP: 1025 | FN: 1103
+
+Number of sentences: 4480
+Step: 559
+f1 = 0.681214275411708
+
+precision = 0.6792480757834825
+
+recall = 0.683191901145328
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 289 | FN: 0
+Label: product-car | TP: 2870 | FP: 639 | FN: 775
+Label: product-food | TP: 0 | FP: 38 | FN: 0
+Label: product-other | TP: 0 | FP: 147 | FN: 0
+Label: product-ship | TP: 0 | FP: 128 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1719 | FP: 924 | FN: 1353
+
+Number of sentences: 4560
+Step: 569
+f1 = 0.6913741683903805
+
+precision = 0.6753265190223235
+
+recall = 0.7082030668442635
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 222 | FN: 0
+Label: product-car | TP: 2889 | FP: 680 | FN: 756
+Label: product-food | TP: 0 | FP: 26 | FN: 0
+Label: product-other | TP: 0 | FP: 356 | FN: 0
+Label: product-ship | TP: 0 | FP: 72 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1868 | FP: 929 | FN: 1204
+
+Number of sentences: 4640
+Step: 579
+f1 = 0.6560814354022468
+
+precision = 0.6698727893256751
+
+recall = 0.6428465088571641
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 267 | FN: 0
+Label: product-car | TP: 2732 | FP: 543 | FN: 913
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 375 | FN: 0
+Label: product-ship | TP: 0 | FP: 61 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1586 | FP: 870 | FN: 1486
+
+Number of sentences: 4720
+Step: 589
+f1 = 0.6844746112921672
+
+precision = 0.6785662033640402
+
+recall = 0.6904868244741842
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 361 | FN: 0
+Label: product-car | TP: 2990 | FP: 736 | FN: 655
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 168 | FN: 0
+Label: product-ship | TP: 0 | FP: 90 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1648 | FP: 830 | FN: 1424
+
+Number of sentences: 4800
+Step: 599
+f1 = 0.7158731276804418
+
+precision = 0.7077997671700993
+
+recall = 0.7241327973787046
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 270 | FN: 0
+Label: product-car | TP: 2970 | FP: 723 | FN: 675
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 112 | FN: 0
+Label: product-ship | TP: 0 | FP: 67 | FN: 0
+Label: product-software | TP: 0 | FP: 10 | FN: 0
+Label: product-weapon | TP: 1894 | FP: 816 | FN: 1178
+
+Number of sentences: 4880
+Step: 609
+f1 = 0.695764346758232
+
+precision = 0.6708126036474975
+
+recall = 0.7226440375156727
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 246 | FN: 0
+Label: product-car | TP: 2872 | FP: 684 | FN: 773
+Label: product-food | TP: 0 | FP: 26 | FN: 0
+Label: product-other | TP: 0 | FP: 281 | FN: 0
+Label: product-ship | TP: 0 | FP: 57 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1982 | FP: 1086 | FN: 1090
+
+Number of sentences: 4960
+Step: 619
+f1 = 0.6734192249088815
+
+precision = 0.6737704918022746
+
+recall = 0.6730683340767112
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 325 | FN: 0
+Label: product-car | TP: 2778 | FP: 617 | FN: 867
+Label: product-food | TP: 0 | FP: 26 | FN: 0
+Label: product-other | TP: 0 | FP: 270 | FN: 0
+Label: product-ship | TP: 0 | FP: 17 | FN: 0
+Label: product-software | TP: 0 | FP: 17 | FN: 0
+Label: product-weapon | TP: 1743 | FP: 917 | FN: 1329
+
+Number of sentences: 5040
+Step: 629
+f1 = 0.6981255875909138
+
+precision = 0.6843008292812636
+
+recall = 0.7125204704470559
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 235 | FN: 0
+Label: product-car | TP: 2953 | FP: 693 | FN: 692
+Label: product-food | TP: 0 | FP: 31 | FN: 0
+Label: product-other | TP: 0 | FP: 254 | FN: 0
+Label: product-ship | TP: 0 | FP: 44 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1833 | FP: 947 | FN: 1239
+
+Number of sentences: 5120
+Step: 639
+f1 = 0.7162420801121883
+
+precision = 0.7085214857964917
+
+recall = 0.7241327973787046
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 116 | FN: 0
+Label: product-car | TP: 2901 | FP: 613 | FN: 744
+Label: product-food | TP: 0 | FP: 14 | FN: 0
+Label: product-other | TP: 0 | FP: 259 | FN: 0
+Label: product-ship | TP: 0 | FP: 102 | FN: 0
+Label: product-weapon | TP: 1963 | FP: 897 | FN: 1109
+
+Number of sentences: 5200
+Step: 649
+f1 = 0.7022900713375798
+
+precision = 0.6862745098029465
+
+recall = 0.7190710138443962
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 113 | FN: 0
+Label: product-car | TP: 2731 | FP: 554 | FN: 914
+Label: product-food | TP: 0 | FP: 30 | FN: 0
+Label: product-other | TP: 0 | FP: 424 | FN: 0
+Label: product-ship | TP: 0 | FP: 77 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2099 | FP: 1008 | FN: 973
+
+Number of sentences: 5280
+Step: 659
+f1 = 0.6590436540427124
+
+precision = 0.6573840912447676
+
+recall = 0.6607116272135467
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 296 | FN: 0
+Label: product-car | TP: 2574 | FP: 568 | FN: 1071
+Label: product-food | TP: 0 | FP: 29 | FN: 0
+Label: product-other | TP: 0 | FP: 376 | FN: 0
+Label: product-ship | TP: 0 | FP: 80 | FN: 0
+Label: product-software | TP: 0 | FP: 17 | FN: 0
+Label: product-weapon | TP: 1864 | FP: 947 | FN: 1208
+
+Number of sentences: 5360
+Step: 669
+f1 = 0.6768887184824313
+
+precision = 0.6768383447444525
+
+recall = 0.6769391097205941
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 352 | FN: 0
+Label: product-car | TP: 2964 | FP: 609 | FN: 681
+Label: product-food | TP: 0 | FP: 35 | FN: 0
+Label: product-other | TP: 0 | FP: 194 | FN: 0
+Label: product-ship | TP: 0 | FP: 69 | FN: 0
+Label: product-software | TP: 0 | FP: 17 | FN: 0
+Label: product-weapon | TP: 1583 | FP: 895 | FN: 1489
+
+Number of sentences: 5440
+Step: 679
+f1 = 0.6889873082640954
+
+precision = 0.6948818897627274
+
+recall = 0.683191901145328
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 173 | FN: 0
+Label: product-car | TP: 3063 | FP: 629 | FN: 582
+Label: product-food | TP: 0 | FP: 25 | FN: 0
+Label: product-other | TP: 0 | FP: 177 | FN: 0
+Label: product-ship | TP: 0 | FP: 56 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1526 | FP: 953 | FN: 1546
+
+Number of sentences: 5520
+Step: 689
+f1 = 0.6747702292119591
+
+precision = 0.6718819188181965
+
+recall = 0.67768348965211
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 402 | FN: 0
+Label: product-car | TP: 2921 | FP: 513 | FN: 724
+Label: product-food | TP: 0 | FP: 38 | FN: 0
+Label: product-other | TP: 0 | FP: 334 | FN: 0
+Label: product-ship | TP: 0 | FP: 67 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1631 | FP: 867 | FN: 1441
+
+Number of sentences: 5600
+Step: 699
+f1 = 0.6725352062676738
+
+precision = 0.662906724510972
+
+recall = 0.682447521213812
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 321 | FN: 0
+Label: product-car | TP: 2639 | FP: 535 | FN: 1006
+Label: product-food | TP: 0 | FP: 70 | FN: 0
+Label: product-other | TP: 0 | FP: 428 | FN: 0
+Label: product-ship | TP: 0 | FP: 88 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1945 | FP: 887 | FN: 1127
+
+Number of sentences: 5680
+Step: 709
+f1 = 0.6843532379463267
+
+precision = 0.6739318706687732
+
+recall = 0.695101980049583
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 156 | FN: 0
+Label: product-car | TP: 2602 | FP: 517 | FN: 1043
+Label: product-food | TP: 0 | FP: 53 | FN: 0
+Label: product-other | TP: 0 | FP: 521 | FN: 0
+Label: product-ship | TP: 0 | FP: 46 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2067 | FP: 962 | FN: 1005
+
+Number of sentences: 5760
+Step: 719
+f1 = 0.7286483290623336
+
+precision = 0.7124768814899524
+
+recall = 0.7455709394063637
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 240 | FN: 0
+Label: product-car | TP: 2958 | FP: 574 | FN: 687
+Label: product-food | TP: 0 | FP: 31 | FN: 0
+Label: product-other | TP: 0 | FP: 202 | FN: 0
+Label: product-ship | TP: 0 | FP: 41 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2050 | FP: 931 | FN: 1022
+
+Number of sentences: 5840
+Step: 729
+f1 = 0.7192905895648908
+
+precision = 0.7027410879126506
+
+recall = 0.7366383802281724
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 217 | FN: 0
+Label: product-car | TP: 2894 | FP: 519 | FN: 751
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 371 | FN: 0
+Label: product-ship | TP: 0 | FP: 73 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2054 | FP: 907 | FN: 1018
+
+Number of sentences: 5920
+Step: 739
+f1 = 0.7256001099970019
+
+precision = 0.7014033625111833
+
+recall = 0.7515259788584912
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 144 | FN: 0
+Label: product-car | TP: 2961 | FP: 574 | FN: 684
+Label: product-food | TP: 0 | FP: 29 | FN: 0
+Label: product-other | TP: 0 | FP: 236 | FN: 0
+Label: product-ship | TP: 0 | FP: 96 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2087 | FP: 1066 | FN: 985
+
+Number of sentences: 6000
+Step: 749
+f1 = 0.7416709708431769
+
+precision = 0.7360703812305923
+
+recall = 0.7473574512420018
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 124 | FN: 0
+Label: product-car | TP: 2876 | FP: 499 | FN: 769
+Label: product-food | TP: 0 | FP: 47 | FN: 0
+Label: product-other | TP: 0 | FP: 246 | FN: 0
+Label: product-ship | TP: 0 | FP: 76 | FN: 0
+Label: product-software | TP: 0 | FP: 10 | FN: 0
+Label: product-weapon | TP: 2144 | FP: 798 | FN: 928
+
+Number of sentences: 6080
+Step: 759
+f1 = 0.7307577515621747
+
+precision = 0.7321775519343414
+
+recall = 0.7293434568993161
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 160 | FN: 0
+Label: product-car | TP: 2923 | FP: 493 | FN: 722
+Label: product-food | TP: 0 | FP: 31 | FN: 0
+Label: product-other | TP: 0 | FP: 181 | FN: 0
+Label: product-ship | TP: 0 | FP: 78 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1976 | FP: 847 | FN: 1096
+
+Number of sentences: 6160
+Step: 769
+f1 = 0.7233163629273522
+
+precision = 0.7168128654960281
+
+recall = 0.7299389608445289
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 217 | FN: 0
+Label: product-car | TP: 2987 | FP: 605 | FN: 658
+Label: product-food | TP: 0 | FP: 25 | FN: 0
+Label: product-other | TP: 0 | FP: 170 | FN: 0
+Label: product-ship | TP: 0 | FP: 83 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1916 | FP: 835 | FN: 1156
+
+Number of sentences: 6240
+Step: 779
+f1 = 0.7632332377866949
+
+precision = 0.7528968713778202
+
+recall = 0.7738573768039693
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 147 | FN: 0
+Label: product-car | TP: 3074 | FP: 542 | FN: 571
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 98 | FN: 0
+Label: product-ship | TP: 0 | FP: 93 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2124 | FP: 820 | FN: 948
+
+Number of sentences: 6320
+Step: 789
+f1 = 0.7484178343258161
+
+precision = 0.7485850461710626
+
+recall = 0.748250707159821
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 168 | FN: 0
+Label: product-car | TP: 2960 | FP: 534 | FN: 685
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 151 | FN: 0
+Label: product-ship | TP: 0 | FP: 70 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2066 | FP: 759 | FN: 1006
+
+Number of sentences: 6400
+Step: 799
+f1 = 0.7284519984632335
+
+precision = 0.7059645201833972
+
+recall = 0.7524192347763102
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 336 | FN: 0
+Label: product-car | TP: 3026 | FP: 594 | FN: 619
+Label: product-food | TP: 0 | FP: 28 | FN: 0
+Label: product-other | TP: 0 | FP: 231 | FN: 0
+Label: product-ship | TP: 0 | FP: 150 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2028 | FP: 762 | FN: 1044
+
+Number of sentences: 6480
+Step: 809
+f1 = 0.7311509356004363
+
+precision = 0.7274871039046021
+
+recall = 0.7348518683925341
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 386 | FN: 0
+Label: product-car | TP: 3009 | FP: 505 | FN: 636
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 135 | FN: 0
+Label: product-ship | TP: 0 | FP: 77 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1927 | FP: 740 | FN: 1145
+
+Number of sentences: 6560
+Step: 819
+f1 = 0.7290890064794668
+
+precision = 0.7301776915025681
+
+recall = 0.7280035730225874
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 201 | FN: 0
+Label: product-car | TP: 2916 | FP: 544 | FN: 729
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 147 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1974 | FP: 858 | FN: 1098
+
+Number of sentences: 6640
+Step: 829
+f1 = 0.7728695095927399
+
+precision = 0.7559794988599716
+
+recall = 0.7905314872699263
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 155 | FN: 0
+Label: product-car | TP: 3107 | FP: 504 | FN: 538
+Label: product-food | TP: 0 | FP: 7 | FN: 0
+Label: product-other | TP: 0 | FP: 60 | FN: 0
+Label: product-ship | TP: 0 | FP: 46 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2203 | FP: 940 | FN: 869
+
+Number of sentences: 6720
+Step: 839
+f1 = 0.7677655627656949
+
+precision = 0.7558055675742741
+
+recall = 0.7801101682287032
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 194 | FN: 0
+Label: product-car | TP: 3092 | FP: 515 | FN: 553
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 81 | FN: 0
+Label: product-ship | TP: 0 | FP: 59 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2148 | FP: 837 | FN: 924
+
+Number of sentences: 6800
+Step: 849
+f1 = 0.7433654508922384
+
+precision = 0.7402923372202269
+
+recall = 0.7464641953241827
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 219 | FN: 0
+Label: product-car | TP: 3005 | FP: 526 | FN: 640
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 225 | FN: 0
+Label: product-ship | TP: 0 | FP: 25 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2009 | FP: 758 | FN: 1063
+
+Number of sentences: 6880
+Step: 859
+f1 = 0.7285474279956857
+
+precision = 0.7150229357787915
+
+recall = 0.7425934196802999
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 225 | FN: 0
+Label: product-car | TP: 3018 | FP: 525 | FN: 627
+Label: product-food | TP: 0 | FP: 30 | FN: 0
+Label: product-other | TP: 0 | FP: 351 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1970 | FP: 832 | FN: 1102
+
+Number of sentences: 6960
+Step: 869
+f1 = 0.7167026856153219
+
+precision = 0.7176119402974364
+
+recall = 0.715795742145726
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 193 | FN: 0
+Label: product-car | TP: 3012 | FP: 541 | FN: 633
+Label: product-food | TP: 0 | FP: 35 | FN: 0
+Label: product-other | TP: 0 | FP: 136 | FN: 0
+Label: product-ship | TP: 0 | FP: 83 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1796 | FP: 902 | FN: 1276
+
+Number of sentences: 7040
+Step: 879
+f1 = 0.7312651928477849
+
+precision = 0.7239568135384827
+
+recall = 0.738722644036417
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 253 | FN: 0
+Label: product-car | TP: 2878 | FP: 549 | FN: 767
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 132 | FN: 0
+Label: product-ship | TP: 0 | FP: 59 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2084 | FP: 892 | FN: 988
+
+Number of sentences: 7120
+Step: 889
+f1 = 0.7474264122851986
+
+precision = 0.7284159954772808
+
+recall = 0.7674557093929322
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 138 | FN: 0
+Label: product-car | TP: 2961 | FP: 495 | FN: 684
+Label: product-other | TP: 0 | FP: 252 | FN: 0
+Label: product-ship | TP: 0 | FP: 60 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2194 | FP: 975 | FN: 878
+
+Number of sentences: 7200
+Step: 899
+f1 = 0.7705735610847336
+
+precision = 0.7594332803227419
+
+recall = 0.7820455560506446
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 92 | FN: 0
+Label: product-car | TP: 3067 | FP: 524 | FN: 578
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 88 | FN: 0
+Label: product-ship | TP: 0 | FP: 75 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2186 | FP: 878 | FN: 886
+
+Number of sentences: 7280
+Step: 909
+f1 = 0.7732647764907504
+
+precision = 0.7631197448524745
+
+recall = 0.7836831918999796
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 103 | FN: 0
+Label: product-car | TP: 3079 | FP: 580 | FN: 566
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 86 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2185 | FP: 803 | FN: 887
+
+Number of sentences: 7360
+Step: 919
+f1 = 0.7466822175472985
+
+precision = 0.7317421752169048
+
+recall = 0.7622450498723207
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 210 | FN: 0
+Label: product-car | TP: 3003 | FP: 700 | FN: 642
+Label: product-food | TP: 0 | FP: 6 | FN: 0
+Label: product-other | TP: 0 | FP: 117 | FN: 0
+Label: product-ship | TP: 0 | FP: 55 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2117 | FP: 787 | FN: 955
+
+Number of sentences: 7440
+Step: 929
+f1 = 0.7327233454415218
+
+precision = 0.7322331251847574
+
+recall = 0.7332142325431991
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 109 | FN: 0
+Label: product-car | TP: 2979 | FP: 462 | FN: 666
+Label: product-food | TP: 0 | FP: 6 | FN: 0
+Label: product-other | TP: 0 | FP: 211 | FN: 0
+Label: product-ship | TP: 0 | FP: 258 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1946 | FP: 753 | FN: 1126
+
+Number of sentences: 7520
+Step: 939
+f1 = 0.7236910266216612
+
+precision = 0.7200117889762452
+
+recall = 0.7274080690773748
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 186 | FN: 0
+Label: product-car | TP: 2758 | FP: 409 | FN: 887
+Label: product-food | TP: 0 | FP: 12 | FN: 0
+Label: product-other | TP: 0 | FP: 306 | FN: 0
+Label: product-ship | TP: 0 | FP: 71 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2128 | FP: 914 | FN: 944
+
+Number of sentences: 7600
+Step: 949
+f1 = 0.746853141852665
+
+precision = 0.7386429819441779
+
+recall = 0.7552478785160708
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 181 | FN: 0
+Label: product-car | TP: 2872 | FP: 413 | FN: 773
+Label: product-food | TP: 0 | FP: 16 | FN: 0
+Label: product-other | TP: 0 | FP: 223 | FN: 0
+Label: product-ship | TP: 0 | FP: 43 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2201 | FP: 917 | FN: 871
+
+Number of sentences: 7680
+Step: 959
+f1 = 0.7524985252760197
+
+precision = 0.7429981134802743
+
+recall = 0.7622450498723207
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 248 | FN: 0
+Label: product-car | TP: 2996 | FP: 473 | FN: 649
+Label: product-food | TP: 0 | FP: 8 | FN: 0
+Label: product-other | TP: 0 | FP: 222 | FN: 0
+Label: product-ship | TP: 0 | FP: 44 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2124 | FP: 774 | FN: 948
+
+Number of sentences: 7760
+Step: 969
+f1 = 0.7509713314123367
+
+precision = 0.7397458116684869
+
+recall = 0.762542801844927
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 130 | FN: 0
+Label: product-car | TP: 2965 | FP: 468 | FN: 680
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 368 | FN: 0
+Label: product-ship | TP: 0 | FP: 72 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2157 | FP: 760 | FN: 915
+
+Number of sentences: 7840
+Step: 979
+f1 = 0.770797957647767
+
+precision = 0.7644216691057623
+
+recall = 0.7772815244889426
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 183 | FN: 0
+Label: product-car | TP: 3152 | FP: 498 | FN: 493
+Label: product-food | TP: 0 | FP: 6 | FN: 0
+Label: product-other | TP: 0 | FP: 92 | FN: 0
+Label: product-ship | TP: 0 | FP: 54 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2069 | FP: 774 | FN: 1003
+
+Number of sentences: 7920
+Step: 989
+f1 = 0.7464479223475023
+
+precision = 0.7346115035307271
+
+recall = 0.7586720262010441
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 249 | FN: 0
+Label: product-car | TP: 3117 | FP: 602 | FN: 528
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 106 | FN: 0
+Label: product-ship | TP: 0 | FP: 108 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1979 | FP: 764 | FN: 1093
+
+Number of sentences: 8000
+Step: 999
+f1 = 0.7235909007685114
+
+precision = 0.7108589485769737
+
+recall = 0.7367872562144755
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 231 | FN: 0
+Label: product-car | TP: 3131 | FP: 552 | FN: 514
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 365 | FN: 0
+Label: product-ship | TP: 0 | FP: 92 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 1818 | FP: 764 | FN: 1254
+
+Number of sentences: 8080
+Step: 1009
+f1 = 0.7322582992272091
+
+precision = 0.7310089020760667
+
+recall = 0.7335119845158055
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 270 | FN: 0
+Label: product-car | TP: 3012 | FP: 454 | FN: 633
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 252 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 6 | FN: 0
+Label: product-weapon | TP: 1915 | FP: 775 | FN: 1157
+
+Number of sentences: 8160
+Step: 1019
+f1 = 0.714100703465119
+
+precision = 0.7312012480487813
+
+recall = 0.6977817478030404
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 209 | FN: 0
+Label: product-car | TP: 2772 | FP: 495 | FN: 873
+Label: product-food | TP: 0 | FP: 7 | FN: 0
+Label: product-other | TP: 0 | FP: 144 | FN: 0
+Label: product-ship | TP: 0 | FP: 61 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1915 | FP: 805 | FN: 1157
+
+Number of sentences: 8240
+Step: 1029
+f1 = 0.7282285664302331
+
+precision = 0.7457865168527688
+
+recall = 0.7114783385429336
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 188 | FN: 0
+Label: product-car | TP: 2920 | FP: 441 | FN: 725
+Label: product-food | TP: 0 | FP: 7 | FN: 0
+Label: product-other | TP: 0 | FP: 77 | FN: 0
+Label: product-ship | TP: 0 | FP: 147 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1859 | FP: 767 | FN: 1213
+
+Number of sentences: 8320
+Step: 1039
+f1 = 0.7132602896732676
+
+precision = 0.7241485118123288
+
+recall = 0.7026946553510456
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 326 | FN: 0
+Label: product-car | TP: 2982 | FP: 412 | FN: 663
+Label: product-food | TP: 0 | FP: 11 | FN: 0
+Label: product-other | TP: 0 | FP: 156 | FN: 0
+Label: product-ship | TP: 0 | FP: 178 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1738 | FP: 713 | FN: 1334
+
+Number of sentences: 8400
+Step: 1049
+f1 = 0.750942554324919
+
+precision = 0.7458149779724731
+
+recall = 0.75614113443389
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 304 | FN: 0
+Label: product-car | TP: 3054 | FP: 405 | FN: 591
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 213 | FN: 0
+Label: product-ship | TP: 0 | FP: 66 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2025 | FP: 732 | FN: 1047
+
+Number of sentences: 8480
+Step: 1059
+f1 = 0.7774007915769378
+
+precision = 0.7703552112253028
+
+recall = 0.7845764478177988
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 264 | FN: 0
+Label: product-car | TP: 3155 | FP: 409 | FN: 490
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 82 | FN: 0
+Label: product-ship | TP: 0 | FP: 63 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2115 | FP: 746 | FN: 957
+
+Number of sentences: 8560
+Step: 1069
+f1 = 0.7212287891335663
+
+precision = 0.7409326424858833
+
+recall = 0.7025457793647424
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 152 | FN: 0
+Label: product-car | TP: 2984 | FP: 421 | FN: 661
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 136 | FN: 0
+Label: product-ship | TP: 0 | FP: 67 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1735 | FP: 868 | FN: 1337
+
+Number of sentences: 8640
+Step: 1079
+f1 = 0.7519489147405463
+
+precision = 0.7499999999988892
+
+recall = 0.7539079946393421
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 150 | FN: 0
+Label: product-car | TP: 3045 | FP: 428 | FN: 600
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 227 | FN: 0
+Label: product-ship | TP: 0 | FP: 65 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2019 | FP: 812 | FN: 1053
+
+Number of sentences: 8720
+Step: 1089
+f1 = 0.7609908452555094
+
+precision = 0.7604817127553368
+
+recall = 0.7615006699408047
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 151 | FN: 0
+Label: product-car | TP: 3048 | FP: 422 | FN: 597
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 228 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2067 | FP: 752 | FN: 1005
+
+Number of sentences: 8800
+Step: 1099
+f1 = 0.7571063267785992
+
+precision = 0.7649293420441196
+
+recall = 0.7494417150502465
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 130 | FN: 0
+Label: product-car | TP: 2939 | FP: 444 | FN: 706
+Label: product-food | TP: 0 | FP: 10 | FN: 0
+Label: product-other | TP: 0 | FP: 145 | FN: 0
+Label: product-ship | TP: 0 | FP: 65 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2095 | FP: 749 | FN: 977
+
+Number of sentences: 8880
+Step: 1109
+f1 = 0.7816362516210676
+
+precision = 0.7726545454534216
+
+recall = 0.7908292392425327
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 143 | FN: 0
+Label: product-car | TP: 3082 | FP: 415 | FN: 563
+Label: product-food | TP: 0 | FP: 7 | FN: 0
+Label: product-other | TP: 0 | FP: 139 | FN: 0
+Label: product-ship | TP: 0 | FP: 61 | FN: 0
+Label: product-software | TP: 0 | FP: 6 | FN: 0
+Label: product-weapon | TP: 2230 | FP: 792 | FN: 842
+
+Number of sentences: 8960
+Step: 1119
+f1 = 0.7801848378826216
+
+precision = 0.7749706227955715
+
+recall = 0.7854697037356179
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 157 | FN: 0
+Label: product-car | TP: 3093 | FP: 410 | FN: 552
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 180 | FN: 0
+Label: product-ship | TP: 0 | FP: 31 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2183 | FP: 747 | FN: 889
+
+Number of sentences: 9040
+Step: 1129
+f1 = 0.7279013780420772
+
+precision = 0.7350842568684757
+
+recall = 0.7208575256800345
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 133 | FN: 0
+Label: product-car | TP: 2879 | FP: 472 | FN: 766
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 446 | FN: 0
+Label: product-ship | TP: 0 | FP: 10 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1963 | FP: 677 | FN: 1109
+
+Number of sentences: 9120
+Step: 1139
+f1 = 0.7474910212986081
+
+precision = 0.7357946351301763
+
+recall = 0.7595652821188632
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 144 | FN: 0
+Label: product-car | TP: 2981 | FP: 405 | FN: 664
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 540 | FN: 0
+Label: product-ship | TP: 0 | FP: 17 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2121 | FP: 715 | FN: 951
+
+Number of sentences: 9200
+Step: 1149
+f1 = 0.7437531273896919
+
+precision = 0.7164137931024601
+
+recall = 0.7732618728587565
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 122 | FN: 0
+Label: product-car | TP: 2953 | FP: 454 | FN: 692
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 617 | FN: 0
+Label: product-ship | TP: 0 | FP: 48 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2241 | FP: 808 | FN: 831
+
+Number of sentences: 9280
+Step: 1159
+f1 = 0.7624907288759016
+
+precision = 0.7593385501243772
+
+recall = 0.7656691975572939
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 137 | FN: 0
+Label: product-car | TP: 2991 | FP: 416 | FN: 654
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 227 | FN: 0
+Label: product-ship | TP: 0 | FP: 64 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2152 | FP: 779 | FN: 920
+
+Number of sentences: 9360
+Step: 1169
+f1 = 0.7293477389347734
+
+precision = 0.7407123119423692
+
+recall = 0.7183266339128803
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 155 | FN: 0
+Label: product-car | TP: 2831 | FP: 423 | FN: 814
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 301 | FN: 0
+Label: product-ship | TP: 0 | FP: 60 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1994 | FP: 743 | FN: 1078
+
+Number of sentences: 9440
+Step: 1179
+f1 = 0.7670336159450089
+
+precision = 0.7664635052761016
+
+recall = 0.7676045853792354
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 149 | FN: 0
+Label: product-car | TP: 3055 | FP: 394 | FN: 590
+Label: product-other | TP: 0 | FP: 174 | FN: 0
+Label: product-ship | TP: 0 | FP: 60 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2101 | FP: 792 | FN: 971
+
+Number of sentences: 9520
+Step: 1189
+f1 = 0.792812772283876
+
+precision = 0.7875716174514653
+
+recall = 0.7981241625713889
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 134 | FN: 0
+Label: product-car | TP: 3194 | FP: 441 | FN: 451
+Label: product-other | TP: 0 | FP: 79 | FN: 0
+Label: product-ship | TP: 0 | FP: 38 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2167 | FP: 752 | FN: 905
+
+Number of sentences: 9600
+Step: 1199
+f1 = 0.7980520867870039
+
+precision = 0.7911059098876666
+
+recall = 0.8051213339276386
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 142 | FN: 0
+Label: product-car | TP: 3202 | FP: 439 | FN: 443
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 92 | FN: 0
+Label: product-ship | TP: 0 | FP: 44 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2206 | FP: 704 | FN: 866
+
+Number of sentences: 9680
+Step: 1209
+f1 = 0.7883750042195777
+
+precision = 0.7812865497064602
+
+recall = 0.7955932708042347
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 158 | FN: 0
+Label: product-car | TP: 3129 | FP: 448 | FN: 516
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 148 | FN: 0
+Label: product-ship | TP: 0 | FP: 54 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2215 | FP: 681 | FN: 857
+
+Number of sentences: 9760
+Step: 1219
+f1 = 0.7742778292304732
+
+precision = 0.7554170797326789
+
+recall = 0.7941045109412028
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 173 | FN: 0
+Label: product-car | TP: 3115 | FP: 554 | FN: 530
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 171 | FN: 0
+Label: product-ship | TP: 0 | FP: 45 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2219 | FP: 773 | FN: 853
+
+Number of sentences: 9840
+Step: 1229
+f1 = 0.7782061490714388
+
+precision = 0.7608819345650628
+
+recall = 0.7963376507357506
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 206 | FN: 0
+Label: product-car | TP: 3178 | FP: 500 | FN: 467
+Label: product-food | TP: 0 | FP: 9 | FN: 0
+Label: product-other | TP: 0 | FP: 135 | FN: 0
+Label: product-ship | TP: 0 | FP: 45 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2171 | FP: 784 | FN: 901
+
+Number of sentences: 9920
+Step: 1239
+f1 = 0.7637133833579612
+
+precision = 0.7496415256656873
+
+recall = 0.7783236563930649
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 180 | FN: 0
+Label: product-car | TP: 3109 | FP: 435 | FN: 536
+Label: product-other | TP: 0 | FP: 179 | FN: 0
+Label: product-ship | TP: 0 | FP: 49 | FN: 0
+Label: product-software | TP: 0 | FP: 10 | FN: 0
+Label: product-weapon | TP: 2119 | FP: 893 | FN: 953
+
+Number of sentences: 10000
+Step: 1249
+f1 = 0.766885168454533
+
+precision = 0.7588921282787772
+
+recall = 0.7750483846943947
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 144 | FN: 0
+Label: product-car | TP: 2979 | FP: 432 | FN: 666
+Label: product-other | TP: 0 | FP: 224 | FN: 0
+Label: product-ship | TP: 0 | FP: 52 | FN: 0
+Label: product-software | TP: 0 | FP: 10 | FN: 0
+Label: product-weapon | TP: 2227 | FP: 792 | FN: 845
+
+Number of sentences: 10080
+Step: 1259
+f1 = 0.7669472701431819
+
+precision = 0.760879120878006
+
+recall = 0.7731129968724533
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 110 | FN: 0
+Label: product-car | TP: 2921 | FP: 437 | FN: 724
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 236 | FN: 0
+Label: product-ship | TP: 0 | FP: 51 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2272 | FP: 795 | FN: 800
+
+Number of sentences: 10160
+Step: 1269
+f1 = 0.7697451469418113
+
+precision = 0.7683180065251137
+
+recall = 0.7711776090505119
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 143 | FN: 0
+Label: product-car | TP: 3079 | FP: 426 | FN: 566
+Label: product-food | TP: 0 | FP: 5 | FN: 0
+Label: product-other | TP: 0 | FP: 165 | FN: 0
+Label: product-ship | TP: 0 | FP: 47 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2101 | FP: 774 | FN: 971
+
+Number of sentences: 10240
+Step: 1279
+f1 = 0.7444713673118104
+
+precision = 0.7576691845217239
+
+recall = 0.7317254726801672
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 113 | FN: 0
+Label: product-car | TP: 3144 | FP: 428 | FN: 501
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 127 | FN: 0
+Label: product-ship | TP: 0 | FP: 53 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 1771 | FP: 848 | FN: 1301
+
+Number of sentences: 10320
+Step: 1289
+f1 = 0.7656677715436266
+
+precision = 0.7611062077070299
+
+recall = 0.7702843531326927
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 162 | FN: 0
+Label: product-car | TP: 3164 | FP: 507 | FN: 481
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 102 | FN: 0
+Label: product-ship | TP: 0 | FP: 42 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2010 | FP: 808 | FN: 1062
+
+Number of sentences: 10400
+Step: 1299
+f1 = 0.7739956122394782
+
+precision = 0.7597877527595586
+
+recall = 0.788744975434288
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 142 | FN: 0
+Label: product-car | TP: 3120 | FP: 503 | FN: 525
+Label: product-other | TP: 0 | FP: 190 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2178 | FP: 820 | FN: 894
+
+Number of sentences: 10480
+Step: 1309
+f1 = 0.7654430799080948
+
+precision = 0.7625591016537197
+
+recall = 0.7683489653107514
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 126 | FN: 0
+Label: product-car | TP: 3077 | FP: 440 | FN: 568
+Label: product-other | TP: 0 | FP: 161 | FN: 0
+Label: product-ship | TP: 0 | FP: 37 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2084 | FP: 841 | FN: 988
+
+Number of sentences: 10560
+Step: 1319
+f1 = 0.7845222221443375
+
+precision = 0.778315018313878
+
+recall = 0.7908292392425327
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 116 | FN: 0
+Label: product-car | TP: 3097 | FP: 420 | FN: 548
+Label: product-other | TP: 0 | FP: 131 | FN: 0
+Label: product-ship | TP: 0 | FP: 43 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2215 | FP: 801 | FN: 857
+
+Number of sentences: 10640
+Step: 1329
+f1 = 0.7944035296091282
+
+precision = 0.7859536645770276
+
+recall = 0.8030370701193941
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 124 | FN: 0
+Label: product-car | TP: 3108 | FP: 404 | FN: 537
+Label: product-other | TP: 0 | FP: 171 | FN: 0
+Label: product-ship | TP: 0 | FP: 43 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2286 | FP: 725 | FN: 786
+
+Number of sentences: 10720
+Step: 1339
+f1 = 0.7945205429453049
+
+precision = 0.7820882607430313
+
+recall = 0.8073544737221865
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 122 | FN: 0
+Label: product-car | TP: 3108 | FP: 419 | FN: 537
+Label: product-other | TP: 0 | FP: 180 | FN: 0
+Label: product-ship | TP: 0 | FP: 20 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2315 | FP: 768 | FN: 757
+
+Number of sentences: 10800
+Step: 1349
+f1 = 0.7973368401861344
+
+precision = 0.783915983310626
+
+recall = 0.8112252493660693
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 117 | FN: 0
+Label: product-car | TP: 3126 | FP: 429 | FN: 519
+Label: product-other | TP: 0 | FP: 172 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2323 | FP: 764 | FN: 749
+
+Number of sentences: 10880
+Step: 1359
+f1 = 0.7966027186786088
+
+precision = 0.7837487393736007
+
+recall = 0.8098853654893406
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 119 | FN: 0
+Label: product-car | TP: 3113 | FP: 459 | FN: 532
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 166 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2327 | FP: 736 | FN: 745
+
+Number of sentences: 10960
+Step: 1369
+f1 = 0.7978990924986428
+
+precision = 0.7929716218191546
+
+recall = 0.8028881941330909
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 144 | FN: 0
+Label: product-car | TP: 3095 | FP: 419 | FN: 550
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 186 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2298 | FP: 638 | FN: 774
+
+Number of sentences: 11040
+Step: 1379
+f1 = 0.7849541776771986
+
+precision = 0.7793103448264427
+
+recall = 0.7906803632562295
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 127 | FN: 0
+Label: product-car | TP: 3022 | FP: 383 | FN: 623
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 279 | FN: 0
+Label: product-ship | TP: 0 | FP: 20 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2289 | FP: 692 | FN: 783
+
+Number of sentences: 11120
+Step: 1389
+f1 = 0.7973270621167928
+
+precision = 0.7866975800597208
+
+recall = 0.8082477296400056
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 99 | FN: 0
+Label: product-car | TP: 3098 | FP: 406 | FN: 547
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 221 | FN: 0
+Label: product-ship | TP: 0 | FP: 31 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2331 | FP: 712 | FN: 741
+
+Number of sentences: 11200
+Step: 1399
+f1 = 0.8057151224113657
+
+precision = 0.7972598746526786
+
+recall = 0.8143516450784363
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 109 | FN: 0
+Label: product-car | TP: 3125 | FP: 384 | FN: 520
+Label: product-other | TP: 0 | FP: 208 | FN: 0
+Label: product-ship | TP: 0 | FP: 31 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2345 | FP: 657 | FN: 727
+
+Number of sentences: 11280
+Step: 1409
+f1 = 0.7956492537338249
+
+precision = 0.7963018192651412
+
+recall = 0.7949977668590219
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 107 | FN: 0
+Label: product-car | TP: 3114 | FP: 396 | FN: 531
+Label: product-other | TP: 0 | FP: 175 | FN: 0
+Label: product-ship | TP: 0 | FP: 31 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2226 | FP: 655 | FN: 846
+
+Number of sentences: 11360
+Step: 1419
+f1 = 0.7839225852481818
+
+precision = 0.7838642453099377
+
+recall = 0.783980943872586
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 137 | FN: 0
+Label: product-car | TP: 3133 | FP: 400 | FN: 512
+Label: product-other | TP: 0 | FP: 177 | FN: 0
+Label: product-ship | TP: 0 | FP: 45 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2133 | FP: 691 | FN: 939
+
+Number of sentences: 11440
+Step: 1429
+f1 = 0.7957991222825149
+
+precision = 0.7907113462657397
+
+recall = 0.8009528063111494
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 209 | FN: 0
+Label: product-car | TP: 3178 | FP: 409 | FN: 467
+Label: product-other | TP: 0 | FP: 148 | FN: 0
+Label: product-ship | TP: 0 | FP: 44 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2202 | FP: 612 | FN: 870
+
+Number of sentences: 11520
+Step: 1439
+f1 = 0.7939609186224373
+
+precision = 0.789403973508772
+
+recall = 0.7985707905302984
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 179 | FN: 0
+Label: product-car | TP: 3082 | FP: 398 | FN: 563
+Label: product-food | TP: 0 | FP: 3 | FN: 0
+Label: product-other | TP: 0 | FP: 205 | FN: 0
+Label: product-ship | TP: 0 | FP: 40 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2282 | FP: 604 | FN: 790
+
+Number of sentences: 11600
+Step: 1449
+f1 = 0.797669955182133
+
+precision = 0.7902118334539223
+
+recall = 0.8052702099139418
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 128 | FN: 0
+Label: product-car | TP: 3083 | FP: 401 | FN: 562
+Label: product-other | TP: 0 | FP: 237 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2326 | FP: 642 | FN: 746
+
+Number of sentences: 11680
+Step: 1459
+f1 = 0.8037424437985226
+
+precision = 0.7955374070281529
+
+recall = 0.8121185052838885
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 110 | FN: 0
+Label: product-car | TP: 3116 | FP: 402 | FN: 529
+Label: product-other | TP: 0 | FP: 201 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2339 | FP: 661 | FN: 733
+
+Number of sentences: 11760
+Step: 1469
+f1 = 0.8032689400211134
+
+precision = 0.8017203025347742
+
+recall = 0.8048235819550322
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 107 | FN: 0
+Label: product-car | TP: 3079 | FP: 404 | FN: 566
+Label: product-other | TP: 0 | FP: 149 | FN: 0
+Label: product-ship | TP: 0 | FP: 34 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2327 | FP: 641 | FN: 745
+
+Number of sentences: 11840
+Step: 1479
+f1 = 0.8229952348389912
+
+precision = 0.8098875756690547
+
+recall = 0.8365341670376113
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 127 | FN: 0
+Label: product-car | TP: 3246 | FP: 390 | FN: 399
+Label: product-other | TP: 0 | FP: 111 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2373 | FP: 661 | FN: 699
+
+Number of sentences: 11920
+Step: 1489
+f1 = 0.8194556475565145
+
+precision = 0.8077813132762398
+
+recall = 0.8314723835033029
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 149 | FN: 0
+Label: product-car | TP: 3246 | FP: 438 | FN: 399
+Label: product-other | TP: 0 | FP: 78 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2339 | FP: 634 | FN: 733
+
+Number of sentences: 12000
+Step: 1499
+f1 = 0.8158109764981734
+
+precision = 0.8142984277650337
+
+recall = 0.8173291648045
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 130 | FN: 0
+Label: product-car | TP: 3214 | FP: 381 | FN: 431
+Label: product-other | TP: 0 | FP: 81 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2276 | FP: 634 | FN: 796
+
+Number of sentences: 12080
+Step: 1509
+f1 = 0.8293691780394007
+
+precision = 0.8230464741228221
+
+recall = 0.8357897871060953
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 101 | FN: 0
+Label: product-car | TP: 3242 | FP: 360 | FN: 403
+Label: product-other | TP: 0 | FP: 75 | FN: 0
+Label: product-ship | TP: 0 | FP: 34 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2372 | FP: 635 | FN: 700
+
+Number of sentences: 12160
+Step: 1519
+f1 = 0.8049269075164791
+
+precision = 0.8023668639041385
+
+recall = 0.8075033497084897
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 97 | FN: 0
+Label: product-car | TP: 3098 | FP: 348 | FN: 547
+Label: product-other | TP: 0 | FP: 150 | FN: 0
+Label: product-ship | TP: 0 | FP: 38 | FN: 0
+Label: product-weapon | TP: 2326 | FP: 703 | FN: 746
+
+Number of sentences: 12240
+Step: 1529
+f1 = 0.7886251629343717
+
+precision = 0.7907498877401725
+
+recall = 0.7865118356397403
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 109 | FN: 0
+Label: product-car | TP: 2918 | FP: 371 | FN: 727
+Label: product-other | TP: 0 | FP: 246 | FN: 0
+Label: product-ship | TP: 0 | FP: 43 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2365 | FP: 627 | FN: 707
+
+Number of sentences: 12320
+Step: 1539
+f1 = 0.8057006366940956
+
+precision = 0.8076290201932571
+
+recall = 0.80378145005091
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 128 | FN: 0
+Label: product-car | TP: 3093 | FP: 342 | FN: 552
+Label: product-other | TP: 0 | FP: 143 | FN: 0
+Label: product-ship | TP: 0 | FP: 45 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2306 | FP: 626 | FN: 766
+
+Number of sentences: 12400
+Step: 1549
+f1 = 0.8077977861188977
+
+precision = 0.8043991733085262
+
+recall = 0.8112252493660693
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 126 | FN: 0
+Label: product-car | TP: 3112 | FP: 344 | FN: 533
+Label: product-food | TP: 0 | FP: 4 | FN: 0
+Label: product-other | TP: 0 | FP: 137 | FN: 0
+Label: product-ship | TP: 0 | FP: 46 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2337 | FP: 666 | FN: 735
+
+Number of sentences: 12480
+Step: 1559
+f1 = 0.7944370022872353
+
+precision = 0.7937286372406097
+
+recall = 0.7951466428453251
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 136 | FN: 0
+Label: product-car | TP: 2991 | FP: 383 | FN: 654
+Label: product-other | TP: 0 | FP: 158 | FN: 0
+Label: product-ship | TP: 0 | FP: 41 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2350 | FP: 668 | FN: 722
+
+Number of sentences: 12560
+Step: 1569
+f1 = 0.8022027037352257
+
+precision = 0.801963993452162
+
+recall = 0.8024415661741813
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 123 | FN: 0
+Label: product-car | TP: 3014 | FP: 394 | FN: 631
+Label: product-other | TP: 0 | FP: 149 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2376 | FP: 635 | FN: 696
+
+Number of sentences: 12640
+Step: 1579
+f1 = 0.8199601337752502
+
+precision = 0.8131771595888534
+
+recall = 0.8268572279279041
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 120 | FN: 0
+Label: product-car | TP: 3171 | FP: 337 | FN: 474
+Label: product-other | TP: 0 | FP: 162 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2383 | FP: 631 | FN: 689
+
+Number of sentences: 12720
+Step: 1589
+f1 = 0.8147932390315161
+
+precision = 0.7972645676010867
+
+recall = 0.833110019352638
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 124 | FN: 0
+Label: product-car | TP: 3203 | FP: 465 | FN: 442
+Label: product-other | TP: 0 | FP: 155 | FN: 0
+Label: product-ship | TP: 0 | FP: 20 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2393 | FP: 657 | FN: 679
+
+Number of sentences: 12800
+Step: 1599
+f1 = 0.8197108241523383
+
+precision = 0.8123994736060647
+
+recall = 0.8271549799005105
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 123 | FN: 0
+Label: product-car | TP: 3218 | FP: 359 | FN: 427
+Label: product-other | TP: 0 | FP: 137 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2338 | FP: 644 | FN: 734
+
+Number of sentences: 12880
+Step: 1609
+f1 = 0.8011962566811424
+
+precision = 0.8047461700198186
+
+recall = 0.7976775346124793
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 124 | FN: 0
+Label: product-car | TP: 3170 | FP: 358 | FN: 475
+Label: product-other | TP: 0 | FP: 137 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2188 | FP: 661 | FN: 884
+
+Number of sentences: 12960
+Step: 1619
+f1 = 0.8127187380176301
+
+precision = 0.8130214541108268
+
+recall = 0.8124162572564948
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 141 | FN: 0
+Label: product-car | TP: 3186 | FP: 336 | FN: 459
+Label: product-other | TP: 0 | FP: 149 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2271 | FP: 601 | FN: 801
+
+Number of sentences: 13040
+Step: 1629
+f1 = 0.8214206632886444
+
+precision = 0.8140350877181082
+
+recall = 0.8289414917361487
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 141 | FN: 0
+Label: product-car | TP: 3230 | FP: 337 | FN: 415
+Label: product-other | TP: 0 | FP: 168 | FN: 0
+Label: product-ship | TP: 0 | FP: 33 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2338 | FP: 591 | FN: 734
+
+Number of sentences: 13120
+Step: 1639
+f1 = 0.8201767254853788
+
+precision = 0.8114527174693116
+
+recall = 0.8290903677224518
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 153 | FN: 0
+Label: product-car | TP: 3210 | FP: 345 | FN: 435
+Label: product-other | TP: 0 | FP: 174 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2359 | FP: 590 | FN: 713
+
+Number of sentences: 13200
+Step: 1649
+f1 = 0.8249044348701945
+
+precision = 0.8147233918965955
+
+recall = 0.8353431591471857
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 155 | FN: 0
+Label: product-car | TP: 3223 | FP: 335 | FN: 422
+Label: product-other | TP: 0 | FP: 146 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2388 | FP: 610 | FN: 684
+
+Number of sentences: 13280
+Step: 1659
+f1 = 0.8291420068332953
+
+precision = 0.8239012200487669
+
+recall = 0.8344499032293666
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 155 | FN: 0
+Label: product-car | TP: 3225 | FP: 327 | FN: 420
+Label: product-food | TP: 0 | FP: 1 | FN: 0
+Label: product-other | TP: 0 | FP: 117 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2380 | FP: 568 | FN: 692
+
+Number of sentences: 13360
+Step: 1669
+f1 = 0.8214390552053062
+
+precision = 0.8103723018965517
+
+recall = 0.8328122673800316
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 159 | FN: 0
+Label: product-car | TP: 3221 | FP: 335 | FN: 424
+Label: product-other | TP: 0 | FP: 153 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2373 | FP: 632 | FN: 699
+
+Number of sentences: 13440
+Step: 1679
+f1 = 0.8187490664592124
+
+precision = 0.8170496664183587
+
+recall = 0.820455560516867
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 135 | FN: 0
+Label: product-car | TP: 3140 | FP: 333 | FN: 505
+Label: product-other | TP: 0 | FP: 181 | FN: 0
+Label: product-ship | TP: 0 | FP: 22 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2371 | FP: 561 | FN: 701
+
+Number of sentences: 13520
+Step: 1689
+f1 = 0.8212232816610457
+
+precision = 0.8130745658823683
+
+recall = 0.8295369956813614
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 126 | FN: 0
+Label: product-car | TP: 3194 | FP: 338 | FN: 451
+Label: product-other | TP: 0 | FP: 193 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2378 | FP: 594 | FN: 694
+
+Number of sentences: 13600
+Step: 1699
+f1 = 0.8027747303054996
+
+precision = 0.7877615362556782
+
+recall = 0.8183712967086224
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 120 | FN: 0
+Label: product-car | TP: 3173 | FP: 387 | FN: 472
+Label: product-other | TP: 0 | FP: 175 | FN: 0
+Label: product-ship | TP: 0 | FP: 55 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2324 | FP: 742 | FN: 748
+
+Number of sentences: 13680
+Step: 1709
+f1 = 0.8205354466029157
+
+precision = 0.8108736734978763
+
+recall = 0.8304302515991806
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 130 | FN: 0
+Label: product-car | TP: 3219 | FP: 327 | FN: 426
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 146 | FN: 0
+Label: product-ship | TP: 0 | FP: 55 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2359 | FP: 639 | FN: 713
+
+Number of sentences: 13760
+Step: 1719
+f1 = 0.8262020241129137
+
+precision = 0.8161220043561132
+
+recall = 0.8365341670376113
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 110 | FN: 0
+Label: product-car | TP: 3210 | FP: 336 | FN: 435
+Label: product-other | TP: 0 | FP: 168 | FN: 0
+Label: product-ship | TP: 0 | FP: 56 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2409 | FP: 594 | FN: 663
+
+Number of sentences: 13840
+Step: 1729
+f1 = 0.8248929523297013
+
+precision = 0.8181285693354545
+
+recall = 0.8317701354759093
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 101 | FN: 0
+Label: product-car | TP: 3233 | FP: 331 | FN: 412
+Label: product-other | TP: 0 | FP: 218 | FN: 0
+Label: product-ship | TP: 0 | FP: 52 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2354 | FP: 538 | FN: 718
+
+Number of sentences: 13920
+Step: 1739
+f1 = 0.8132663563523217
+
+precision = 0.8070664125482964
+
+recall = 0.8195623045990479
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 117 | FN: 0
+Label: product-car | TP: 3231 | FP: 297 | FN: 414
+Label: product-other | TP: 0 | FP: 258 | FN: 0
+Label: product-ship | TP: 0 | FP: 54 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2274 | FP: 588 | FN: 798
+
+Number of sentences: 14000
+Step: 1749
+f1 = 0.8270421654504342
+
+precision = 0.8191908865184472
+
+recall = 0.8350454071745794
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 143 | FN: 0
+Label: product-car | TP: 3229 | FP: 325 | FN: 416
+Label: product-other | TP: 0 | FP: 161 | FN: 0
+Label: product-ship | TP: 0 | FP: 52 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2380 | FP: 555 | FN: 692
+
+Number of sentences: 14080
+Step: 1759
+f1 = 0.8375664450876932
+
+precision = 0.8308188076741895
+
+recall = 0.8444245943116802
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 133 | FN: 0
+Label: product-car | TP: 3260 | FP: 326 | FN: 385
+Label: product-other | TP: 0 | FP: 93 | FN: 0
+Label: product-ship | TP: 0 | FP: 66 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2412 | FP: 535 | FN: 660
+
+Number of sentences: 14160
+Step: 1769
+f1 = 0.8449497882654733
+
+precision = 0.8381426688137716
+
+recall = 0.8518683936268395
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 99 | FN: 0
+Label: product-car | TP: 3273 | FP: 318 | FN: 372
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 99 | FN: 0
+Label: product-ship | TP: 0 | FP: 47 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2449 | FP: 538 | FN: 623
+
+Number of sentences: 14240
+Step: 1779
+f1 = 0.8368219289615185
+
+precision = 0.8286381550126571
+
+recall = 0.8451689742431961
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 99 | FN: 0
+Label: product-car | TP: 3258 | FP: 346 | FN: 387
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 103 | FN: 0
+Label: product-ship | TP: 0 | FP: 45 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2419 | FP: 577 | FN: 653
+
+Number of sentences: 14320
+Step: 1789
+f1 = 0.8379376519646355
+
+precision = 0.8315496261533037
+
+recall = 0.8444245943116802
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 97 | FN: 0
+Label: product-car | TP: 3239 | FP: 336 | FN: 406
+Label: product-other | TP: 0 | FP: 122 | FN: 0
+Label: product-ship | TP: 0 | FP: 35 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2433 | FP: 557 | FN: 639
+
+Number of sentences: 14400
+Step: 1799
+f1 = 0.8301522415639624
+
+precision = 0.8282454060450085
+
+recall = 0.8320678874485156
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 107 | FN: 0
+Label: product-car | TP: 3234 | FP: 316 | FN: 411
+Label: product-other | TP: 0 | FP: 117 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2355 | FP: 587 | FN: 717
+
+Number of sentences: 14480
+Step: 1809
+f1 = 0.826510136911264
+
+precision = 0.8249777514078538
+
+recall = 0.8280482358183295
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 105 | FN: 0
+Label: product-car | TP: 3238 | FP: 294 | FN: 407
+Label: product-other | TP: 0 | FP: 127 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2324 | FP: 622 | FN: 748
+
+Number of sentences: 14560
+Step: 1819
+f1 = 0.8304821100844371
+
+precision = 0.8262599469483846
+
+recall = 0.834747655201973
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 108 | FN: 0
+Label: product-car | TP: 3242 | FP: 312 | FN: 403
+Label: product-other | TP: 0 | FP: 136 | FN: 0
+Label: product-ship | TP: 0 | FP: 28 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2365 | FP: 593 | FN: 707
+
+Number of sentences: 14640
+Step: 1829
+f1 = 0.8413436642497396
+
+precision = 0.8345049794949699
+
+recall = 0.8482953699555631
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 101 | FN: 0
+Label: product-car | TP: 3247 | FP: 314 | FN: 398
+Label: product-other | TP: 0 | FP: 109 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2451 | FP: 574 | FN: 621
+
+Number of sentences: 14720
+Step: 1839
+f1 = 0.8412827078632141
+
+precision = 0.8332359813071945
+
+recall = 0.8494863778459886
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 91 | FN: 0
+Label: product-car | TP: 3206 | FP: 317 | FN: 439
+Label: product-other | TP: 0 | FP: 145 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2500 | FP: 563 | FN: 572
+
+Number of sentences: 14800
+Step: 1849
+f1 = 0.8315555505544431
+
+precision = 0.8275099513477406
+
+recall = 0.8356409111197921
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 104 | FN: 0
+Label: product-car | TP: 3160 | FP: 304 | FN: 485
+Label: product-other | TP: 0 | FP: 147 | FN: 0
+Label: product-ship | TP: 0 | FP: 22 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2453 | FP: 591 | FN: 619
+
+Number of sentences: 14880
+Step: 1859
+f1 = 0.8300162120123709
+
+precision = 0.8220178128181895
+
+recall = 0.8381718028869463
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 111 | FN: 0
+Label: product-car | TP: 3181 | FP: 311 | FN: 464
+Label: product-other | TP: 0 | FP: 171 | FN: 0
+Label: product-ship | TP: 0 | FP: 25 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2449 | FP: 599 | FN: 623
+
+Number of sentences: 14960
+Step: 1869
+f1 = 0.8325104953308722
+
+precision = 0.8241902538651529
+
+recall = 0.8410004466267069
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 118 | FN: 0
+Label: product-car | TP: 3243 | FP: 312 | FN: 402
+Label: product-other | TP: 0 | FP: 161 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2406 | FP: 588 | FN: 666
+
+Number of sentences: 15040
+Step: 1879
+f1 = 0.8394278923746271
+
+precision = 0.8314590331519914
+
+recall = 0.8475509900240471
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 101 | FN: 0
+Label: product-car | TP: 3257 | FP: 306 | FN: 388
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2436 | FP: 591 | FN: 636
+
+Number of sentences: 15120
+Step: 1889
+f1 = 0.8477153563337094
+
+precision = 0.8407027818435715
+
+recall = 0.8548459133529033
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 93 | FN: 0
+Label: product-car | TP: 3289 | FP: 303 | FN: 356
+Label: product-other | TP: 0 | FP: 101 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2453 | FP: 565 | FN: 619
+
+Number of sentences: 15200
+Step: 1899
+f1 = 0.8538958577336578
+
+precision = 0.85206048028335
+
+recall = 0.8557391692707225
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 70 | FN: 0
+Label: product-car | TP: 3285 | FP: 283 | FN: 360
+Label: product-other | TP: 0 | FP: 85 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2463 | FP: 528 | FN: 609
+
+Number of sentences: 15280
+Step: 1909
+f1 = 0.8505306553765924
+
+precision = 0.8422128156461214
+
+recall = 0.8590144409693926
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 72 | FN: 0
+Label: product-car | TP: 3310 | FP: 301 | FN: 335
+Label: product-other | TP: 0 | FP: 72 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2460 | FP: 610 | FN: 612
+
+Number of sentences: 15360
+Step: 1919
+f1 = 0.8338695475010773
+
+precision = 0.819370599222849
+
+recall = 0.8488908739007758
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3266 | FP: 379 | FN: 379
+Label: product-other | TP: 0 | FP: 91 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2436 | FP: 682 | FN: 636
+
+Number of sentences: 15440
+Step: 1929
+f1 = 0.8383128245255771
+
+precision = 0.8249027237342198
+
+recall = 0.8521661455994459
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 86 | FN: 0
+Label: product-car | TP: 3271 | FP: 319 | FN: 374
+Label: product-other | TP: 0 | FP: 126 | FN: 0
+Label: product-ship | TP: 0 | FP: 32 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2453 | FP: 650 | FN: 619
+
+Number of sentences: 15520
+Step: 1939
+f1 = 0.842198185244424
+
+precision = 0.8324607329830825
+
+recall = 0.8521661455994459
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 122 | FN: 0
+Label: product-car | TP: 3280 | FP: 285 | FN: 365
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 136 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2444 | FP: 579 | FN: 628
+
+Number of sentences: 15600
+Step: 1949
+f1 = 0.8360485731979483
+
+precision = 0.8317371445398088
+
+recall = 0.8404049426814941
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 148 | FN: 0
+Label: product-car | TP: 3249 | FP: 270 | FN: 396
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 159 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2396 | FP: 537 | FN: 676
+
+Number of sentences: 15680
+Step: 1959
+f1 = 0.8288837608945108
+
+precision = 0.8280832095084278
+
+recall = 0.8296858716676646
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 135 | FN: 0
+Label: product-car | TP: 3237 | FP: 279 | FN: 408
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 159 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2336 | FP: 556 | FN: 736
+
+Number of sentences: 15760
+Step: 1969
+f1 = 0.8400562454615049
+
+precision = 0.835295849277546
+
+recall = 0.8448712222705898
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 111 | FN: 0
+Label: product-car | TP: 3268 | FP: 279 | FN: 377
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 156 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2407 | FP: 545 | FN: 665
+
+Number of sentences: 15840
+Step: 1979
+f1 = 0.8470744630841387
+
+precision = 0.8407391113054102
+
+recall = 0.8535060294761746
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 80 | FN: 0
+Label: product-car | TP: 3296 | FP: 278 | FN: 349
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 143 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2437 | FP: 557 | FN: 635
+
+Number of sentences: 15920
+Step: 1989
+f1 = 0.8476781967144368
+
+precision = 0.842074335241895
+
+recall = 0.8533571534898714
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 76 | FN: 0
+Label: product-car | TP: 3287 | FP: 290 | FN: 358
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 139 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2445 | FP: 542 | FN: 627
+
+Number of sentences: 16000
+Step: 1999
+f1 = 0.8489868312657806
+
+precision = 0.8434974283602594
+
+recall = 0.854548161380297
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 76 | FN: 0
+Label: product-car | TP: 3296 | FP: 276 | FN: 349
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 139 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2444 | FP: 546 | FN: 628
+
+Number of sentences: 16080
+Step: 2009
+f1 = 0.8532387866380092
+
+precision = 0.8466725300485977
+
+recall = 0.8599076968872117
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 74 | FN: 0
+Label: product-car | TP: 3287 | FP: 273 | FN: 358
+Label: product-other | TP: 0 | FP: 124 | FN: 0
+Label: product-ship | TP: 0 | FP: 25 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2489 | FP: 548 | FN: 583
+
+Number of sentences: 16160
+Step: 2019
+f1 = 0.8471802382723466
+
+precision = 0.839077102802513
+
+recall = 0.8554414172981161
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3270 | FP: 274 | FN: 375
+Label: product-other | TP: 0 | FP: 113 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2476 | FP: 610 | FN: 596
+
+Number of sentences: 16240
+Step: 2029
+f1 = 0.8446279722870036
+
+precision = 0.8367913500864453
+
+recall = 0.8526127735583555
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3241 | FP: 272 | FN: 404
+Label: product-other | TP: 0 | FP: 132 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2486 | FP: 608 | FN: 586
+
+Number of sentences: 16320
+Step: 2039
+f1 = 0.8435103194829634
+
+precision = 0.8357445564798542
+
+recall = 0.85142176566793
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 75 | FN: 0
+Label: product-car | TP: 3233 | FP: 275 | FN: 412
+Label: product-other | TP: 0 | FP: 145 | FN: 0
+Label: product-ship | TP: 0 | FP: 30 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2486 | FP: 597 | FN: 586
+
+Number of sentences: 16400
+Step: 2049
+f1 = 0.8517945266522722
+
+precision = 0.843403385871507
+
+recall = 0.8603543248461213
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 82 | FN: 0
+Label: product-car | TP: 3276 | FP: 282 | FN: 369
+Label: product-other | TP: 0 | FP: 144 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2503 | FP: 535 | FN: 569
+
+Number of sentences: 16480
+Step: 2059
+f1 = 0.8529086435282812
+
+precision = 0.8448729184913163
+
+recall = 0.8610987047776372
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 78 | FN: 0
+Label: product-car | TP: 3281 | FP: 287 | FN: 364
+Label: product-other | TP: 0 | FP: 144 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2503 | FP: 523 | FN: 569
+
+Number of sentences: 16560
+Step: 2069
+f1 = 0.8543231648328583
+
+precision = 0.8453578195585988
+
+recall = 0.8634807205584882
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 78 | FN: 0
+Label: product-car | TP: 3292 | FP: 273 | FN: 353
+Label: product-other | TP: 0 | FP: 166 | FN: 0
+Label: product-ship | TP: 0 | FP: 26 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2508 | FP: 514 | FN: 564
+
+Number of sentences: 16640
+Step: 2079
+f1 = 0.8534863145051914
+
+precision = 0.8434365460083684
+
+recall = 0.8637784725310946
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 81 | FN: 0
+Label: product-car | TP: 3296 | FP: 278 | FN: 349
+Label: product-other | TP: 0 | FP: 174 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 4 | FN: 0
+Label: product-weapon | TP: 2506 | FP: 516 | FN: 566
+
+Number of sentences: 16720
+Step: 2089
+f1 = 0.8537648660549433
+
+precision = 0.8475645539893668
+
+recall = 0.8600565728735149
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 85 | FN: 0
+Label: product-car | TP: 3273 | FP: 261 | FN: 372
+Label: product-other | TP: 0 | FP: 176 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2504 | FP: 491 | FN: 568
+
+Number of sentences: 16800
+Step: 2099
+f1 = 0.849540463424567
+
+precision = 0.8459040590393418
+
+recall = 0.8532082775035683
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 85 | FN: 0
+Label: product-car | TP: 3244 | FP: 269 | FN: 401
+Label: product-other | TP: 0 | FP: 182 | FN: 0
+Label: product-ship | TP: 0 | FP: 22 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2487 | FP: 484 | FN: 585
+
+Number of sentences: 16880
+Step: 2109
+f1 = 0.8582001134121586
+
+precision = 0.8532744665182439
+
+recall = 0.8631829685858818
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 82 | FN: 0
+Label: product-car | TP: 3288 | FP: 263 | FN: 357
+Label: product-other | TP: 0 | FP: 145 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2510 | FP: 481 | FN: 562
+
+Number of sentences: 16960
+Step: 2119
+f1 = 0.8614769818273745
+
+precision = 0.8564072384863081
+
+recall = 0.8666071162708552
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 73 | FN: 0
+Label: product-car | TP: 3299 | FP: 269 | FN: 346
+Label: product-other | TP: 0 | FP: 133 | FN: 0
+Label: product-ship | TP: 0 | FP: 22 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2522 | FP: 477 | FN: 550
+
+Number of sentences: 17040
+Step: 2129
+f1 = 0.8622603754296462
+
+precision = 0.8573741536637366
+
+recall = 0.8672026202160679
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 64 | FN: 0
+Label: product-car | TP: 3309 | FP: 267 | FN: 336
+Label: product-other | TP: 0 | FP: 124 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2516 | FP: 488 | FN: 556
+
+Number of sentences: 17120
+Step: 2139
+f1 = 0.8590882128792977
+
+precision = 0.8541574687257482
+
+recall = 0.8640762245037009
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 64 | FN: 0
+Label: product-car | TP: 3317 | FP: 275 | FN: 328
+Label: product-other | TP: 0 | FP: 117 | FN: 0
+Label: product-ship | TP: 0 | FP: 22 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2487 | FP: 511 | FN: 585
+
+Number of sentences: 17200
+Step: 2149
+f1 = 0.8525294372623963
+
+precision = 0.8483195754704477
+
+recall = 0.8567813011748447
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 64 | FN: 0
+Label: product-car | TP: 3307 | FP: 269 | FN: 338
+Label: product-other | TP: 0 | FP: 151 | FN: 0
+Label: product-ship | TP: 0 | FP: 16 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2448 | FP: 527 | FN: 624
+
+Number of sentences: 17280
+Step: 2159
+f1 = 0.8520079825738303
+
+precision = 0.8465608465596024
+
+recall = 0.8575256811063607
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 64 | FN: 0
+Label: product-car | TP: 3309 | FP: 276 | FN: 336
+Label: product-other | TP: 0 | FP: 154 | FN: 0
+Label: product-ship | TP: 0 | FP: 16 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2451 | FP: 532 | FN: 621
+
+Number of sentences: 17360
+Step: 2169
+f1 = 0.8604341996955471
+
+precision = 0.853626373625123
+
+recall = 0.8673514962023711
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 67 | FN: 0
+Label: product-car | TP: 3331 | FP: 272 | FN: 314
+Label: product-other | TP: 0 | FP: 133 | FN: 0
+Label: product-ship | TP: 0 | FP: 16 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2495 | FP: 509 | FN: 577
+
+Number of sentences: 17440
+Step: 2179
+f1 = 0.8586209394968077
+
+precision = 0.8525095391827817
+
+recall = 0.8648206044352169
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 69 | FN: 0
+Label: product-car | TP: 3321 | FP: 270 | FN: 324
+Label: product-other | TP: 0 | FP: 127 | FN: 0
+Label: product-ship | TP: 0 | FP: 16 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2488 | FP: 521 | FN: 584
+
+Number of sentences: 17520
+Step: 2189
+f1 = 0.8550284860815666
+
+precision = 0.8500588581506032
+
+recall = 0.8600565728735149
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 80 | FN: 0
+Label: product-car | TP: 3319 | FP: 256 | FN: 326
+Label: product-other | TP: 0 | FP: 124 | FN: 0
+Label: product-ship | TP: 0 | FP: 18 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2458 | FP: 539 | FN: 614
+
+Number of sentences: 17600
+Step: 2199
+f1 = 0.8571428521419274
+
+precision = 0.8501757469231837
+
+recall = 0.8642251004900041
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 85 | FN: 0
+Label: product-car | TP: 3347 | FP: 256 | FN: 298
+Label: product-other | TP: 0 | FP: 104 | FN: 0
+Label: product-ship | TP: 0 | FP: 24 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2458 | FP: 552 | FN: 614
+
+Number of sentences: 17680
+Step: 2209
+f1 = 0.8664991079498771
+
+precision = 0.8605197474660689
+
+recall = 0.8725621557229827
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 83 | FN: 0
+Label: product-car | TP: 3362 | FP: 267 | FN: 283
+Label: product-other | TP: 0 | FP: 80 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2499 | FP: 495 | FN: 573
+
+Number of sentences: 17760
+Step: 2219
+f1 = 0.8682869123366738
+
+precision = 0.8617302052773289
+
+recall = 0.8749441715038336
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 69 | FN: 0
+Label: product-car | TP: 3372 | FP: 262 | FN: 273
+Label: product-other | TP: 0 | FP: 80 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2505 | FP: 507 | FN: 567
+
+Number of sentences: 17840
+Step: 2229
+f1 = 0.868870640661225
+
+precision = 0.8633156966477612
+
+recall = 0.874497543544924
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 69 | FN: 0
+Label: product-car | TP: 3361 | FP: 250 | FN: 284
+Label: product-other | TP: 0 | FP: 92 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2513 | FP: 494 | FN: 559
+
+Number of sentences: 17920
+Step: 2239
+f1 = 0.8667800822834779
+
+precision = 0.861364304615023
+
+recall = 0.8722644037503763
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 69 | FN: 0
+Label: product-car | TP: 3347 | FP: 255 | FN: 298
+Label: product-other | TP: 0 | FP: 102 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-weapon | TP: 2512 | FP: 494 | FN: 560
+
+Number of sentences: 18000
+Step: 2249
+f1 = 0.8676481417770361
+
+precision = 0.8623529411752024
+
+recall = 0.8730087836818922
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 69 | FN: 0
+Label: product-car | TP: 3350 | FP: 255 | FN: 295
+Label: product-other | TP: 0 | FP: 99 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-weapon | TP: 2514 | FP: 490 | FN: 558
+
+Number of sentences: 18080
+Step: 2259
+f1 = 0.8631111061099521
+
+precision = 0.8589119858457042
+
+recall = 0.8673514962023711
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 71 | FN: 0
+Label: product-car | TP: 3346 | FP: 264 | FN: 299
+Label: product-other | TP: 0 | FP: 89 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-weapon | TP: 2480 | FP: 510 | FN: 592
+
+Number of sentences: 18160
+Step: 2269
+f1 = 0.8652576887325666
+
+precision = 0.8619976359325325
+
+recall = 0.8685425040927965
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 71 | FN: 0
+Label: product-car | TP: 3346 | FP: 248 | FN: 299
+Label: product-other | TP: 0 | FP: 87 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2488 | FP: 503 | FN: 584
+
+Number of sentences: 18240
+Step: 2279
+f1 = 0.8623635098171333
+
+precision = 0.8605099318101682
+
+recall = 0.8642251004900041
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 66 | FN: 0
+Label: product-car | TP: 3323 | FP: 237 | FN: 322
+Label: product-other | TP: 0 | FP: 109 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2482 | FP: 504 | FN: 590
+
+Number of sentences: 18320
+Step: 2289
+f1 = 0.8611338088036266
+
+precision = 0.8595372293075355
+
+recall = 0.8627363406269722
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 65 | FN: 0
+Label: product-car | TP: 3295 | FP: 241 | FN: 350
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 117 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2500 | FP: 497 | FN: 572
+
+Number of sentences: 18400
+Step: 2299
+f1 = 0.8667111159886742
+
+precision = 0.8626843657804385
+
+recall = 0.8707756438873444
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 67 | FN: 0
+Label: product-car | TP: 3315 | FP: 241 | FN: 330
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 112 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2534 | FP: 484 | FN: 538
+
+Number of sentences: 18480
+Step: 2309
+f1 = 0.8624750005531745
+
+precision = 0.8580901856751281
+
+recall = 0.8669048682434615
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 67 | FN: 0
+Label: product-car | TP: 3302 | FP: 226 | FN: 343
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 131 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2521 | FP: 512 | FN: 551
+
+Number of sentences: 18560
+Step: 2319
+f1 = 0.8640201401625265
+
+precision = 0.8596904937349157
+
+recall = 0.8683936281064933
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 68 | FN: 0
+Label: product-car | TP: 3303 | FP: 226 | FN: 342
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2530 | FP: 501 | FN: 542
+
+Number of sentences: 18640
+Step: 2329
+f1 = 0.8629659773600409
+
+precision = 0.8592089728440685
+
+recall = 0.8667559922571584
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 69 | FN: 0
+Label: product-car | TP: 3299 | FP: 230 | FN: 346
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 135 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2523 | FP: 493 | FN: 549
+
+Number of sentences: 18720
+Step: 2339
+f1 = 0.8669286034946093
+
+precision = 0.8634081512095934
+
+recall = 0.870477891914738
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 65 | FN: 0
+Label: product-car | TP: 3324 | FP: 235 | FN: 321
+Label: product-other | TP: 0 | FP: 123 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2523 | FP: 477 | FN: 549
+
+Number of sentences: 18800
+Step: 2349
+f1 = 0.863329620508617
+
+precision = 0.8600768321500295
+
+recall = 0.8666071162708552
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 72 | FN: 0
+Label: product-car | TP: 3317 | FP: 228 | FN: 328
+Label: product-other | TP: 0 | FP: 125 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2504 | FP: 497 | FN: 568
+
+Number of sentences: 18880
+Step: 2359
+f1 = 0.8626548885210681
+
+precision = 0.8599112426022782
+
+recall = 0.8654161083804296
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 72 | FN: 0
+Label: product-car | TP: 3315 | FP: 225 | FN: 330
+Label: product-other | TP: 0 | FP: 128 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2498 | FP: 497 | FN: 574
+
+Number of sentences: 18960
+Step: 2369
+f1 = 0.8645802382500473
+
+precision = 0.8613861386125885
+
+recall = 0.8677981241612807
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 72 | FN: 0
+Label: product-car | TP: 3319 | FP: 231 | FN: 326
+Label: product-other | TP: 0 | FP: 123 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2510 | FP: 487 | FN: 562
+
+Number of sentences: 19040
+Step: 2379
+f1 = 0.8660053251735792
+
+precision = 0.8612869974954185
+
+recall = 0.8707756438873444
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 76 | FN: 0
+Label: product-car | TP: 3342 | FP: 235 | FN: 303
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 117 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2507 | FP: 487 | FN: 565
+
+Number of sentences: 19120
+Step: 2389
+f1 = 0.8649689023130537
+
+precision = 0.8602562214683254
+
+recall = 0.8697335119832221
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 76 | FN: 0
+Label: product-car | TP: 3342 | FP: 242 | FN: 303
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 119 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2500 | FP: 485 | FN: 572
+
+Number of sentences: 19200
+Step: 2399
+f1 = 0.865782252465647
+
+precision = 0.8620129870117149
+
+recall = 0.8695846359969189
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 72 | FN: 0
+Label: product-car | TP: 3345 | FP: 240 | FN: 300
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 120 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2496 | FP: 476 | FN: 576
+
+Number of sentences: 19280
+Step: 2409
+f1 = 0.8672251414143952
+
+precision = 0.8637034849367046
+
+recall = 0.8707756438873444
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 74 | FN: 0
+Label: product-car | TP: 3339 | FP: 240 | FN: 306
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2510 | FP: 452 | FN: 562
+
+Number of sentences: 19360
+Step: 2419
+f1 = 0.8640639997399278
+
+precision = 0.859923326451106
+
+recall = 0.8682447521201903
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3339 | FP: 238 | FN: 306
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2493 | FP: 478 | FN: 579
+
+Number of sentences: 19440
+Step: 2429
+f1 = 0.8616981781652749
+
+precision = 0.8584515366417577
+
+recall = 0.8649694804215201
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3338 | FP: 240 | FN: 307
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2472 | FP: 482 | FN: 600
+
+Number of sentences: 19520
+Step: 2439
+f1 = 0.8624629030106481
+
+precision = 0.8595297944686389
+
+recall = 0.8654161083804296
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3337 | FP: 240 | FN: 308
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 128 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2476 | FP: 476 | FN: 596
+
+Number of sentences: 19600
+Step: 2449
+f1 = 0.8627334666857391
+
+precision = 0.8590405904046361
+
+recall = 0.866458240284552
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 78 | FN: 0
+Label: product-car | TP: 3338 | FP: 247 | FN: 307
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 131 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2482 | FP: 472 | FN: 590
+
+Number of sentences: 19680
+Step: 2459
+f1 = 0.8616958147438492
+
+precision = 0.8580073800725343
+
+recall = 0.8654161083804296
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3338 | FP: 242 | FN: 307
+Label: product-food | TP: 0 | FP: 2 | FN: 0
+Label: product-other | TP: 0 | FP: 129 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2475 | FP: 485 | FN: 597
+
+Number of sentences: 19760
+Step: 2469
+f1 = 0.8623526745629647
+
+precision = 0.8587245349854462
+
+recall = 0.8660116123256424
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3338 | FP: 242 | FN: 307
+Label: product-other | TP: 0 | FP: 129 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2479 | FP: 482 | FN: 593
+
+Number of sentences: 19840
+Step: 2479
+f1 = 0.8622656836703879
+
+precision = 0.8582595870193831
+
+recall = 0.8663093642982488
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 79 | FN: 0
+Label: product-car | TP: 3338 | FP: 247 | FN: 307
+Label: product-other | TP: 0 | FP: 128 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2481 | FP: 482 | FN: 591
+
+Number of sentences: 19920
+Step: 2489
+f1 = 0.8632218794972836
+
+precision = 0.8597164796207033
+
+recall = 0.8667559922571584
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3336 | FP: 244 | FN: 309
+Label: product-other | TP: 0 | FP: 129 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2486 | FP: 475 | FN: 586
+
+Number of sentences: 20000
+Step: 2499
+f1 = 0.8633498874878606
+
+precision = 0.8599704579012408
+
+recall = 0.8667559922571584
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3336 | FP: 240 | FN: 309
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2486 | FP: 476 | FN: 586
+
+Number of sentences: 20080
+Step: 2509
+f1 = 0.8627160077555912
+
+precision = 0.8595920780359746
+
+recall = 0.8658627363393392
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3334 | FP: 241 | FN: 311
+Label: product-other | TP: 0 | FP: 131 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2482 | FP: 476 | FN: 590
+
+Number of sentences: 20160
+Step: 2519
+f1 = 0.8631610125764763
+
+precision = 0.860035471473751
+
+recall = 0.8663093642982488
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3337 | FP: 239 | FN: 308
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2482 | FP: 476 | FN: 590
+
+Number of sentences: 20240
+Step: 2529
+f1 = 0.8631610125764763
+
+precision = 0.860035471473751
+
+recall = 0.8663093642982488
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3337 | FP: 239 | FN: 308
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2482 | FP: 476 | FN: 590
+
+Number of sentences: 20320
+Step: 2539
+f1 = 0.8628643426958862
+
+precision = 0.8597398758485667
+
+recall = 0.8660116123256424
+
+
+***** Per-Label Confusion Matrix *****
+Label: product-airplane | TP: 0 | FP: 77 | FN: 0
+Label: product-car | TP: 3335 | FP: 241 | FN: 310
+Label: product-other | TP: 0 | FP: 130 | FN: 0
+Label: product-ship | TP: 0 | FP: 23 | FN: 0
+Label: product-software | TP: 0 | FP: 2 | FN: 0
+Label: product-weapon | TP: 2482 | FP: 476 | FN: 590
+
+f1 = 0.5868680950071974
+
+precision = 0.6632270168843092
+
+recall = 0.5262766115817682
+
+
+***** Per-Label Confusion Matrix *****
+Label: organization-company | TP: 0 | FP: 77 | FN: 0
+Label: organization-government/governmentagency | TP: 0 | FP: 30 | FN: 0
+Label: organization-other | TP: 0 | FP: 18 | FN: 0
+Label: organization-politicalparty | TP: 0 | FP: 1 | FN: 0
+Label: person-athlete | TP: 0 | FP: 2 | FN: 0
+Label: person-politician | TP: 0 | FP: 5 | FN: 0
+Label: person-soldier | TP: 0 | FP: 11 | FN: 0
+Label: product-airplane | TP: 0 | FP: 139 | FN: 0
+Label: product-car | TP: 1954 | FP: 588 | FN: 1691
+Label: product-food | TP: 0 | FP: 16 | FN: 0
+Label: product-other | TP: 0 | FP: 99 | FN: 0
+Label: product-ship | TP: 0 | FP: 59 | FN: 0
+Label: product-software | TP: 0 | FP: 25 | FN: 0
+Label: product-weapon | TP: 1581 | FP: 725 | FN: 1491
+
