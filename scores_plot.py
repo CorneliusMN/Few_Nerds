@@ -77,10 +77,10 @@ def main():
     plt.plot(s2_f, f2_f, linestyle = '-', label = os.path.basename(args.file2))
 
     plt.title("F1 Score vs Number of Sentences")
-    plt.xlabel("Number of Sentences")
+    plt.xlabel("Number of Sentences (in thousands)")
     plt.ylabel("F1 Score")
     # plt.xlim(0, x_limit)
-    plt.xticks(np.arange(0, x_limit, step = 1000))
+    plt.xticks(np.arange(0, x_limit, step = 1000), labels = [str(i//1000) for i in range(0, x_limit, 1000)])
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
