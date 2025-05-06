@@ -1,6 +1,7 @@
 import argparse
 import re
 import matplotlib.pyplot as plt
+import numpy as np
 
 def file_to_lists(path, labels):
     """
@@ -17,7 +18,7 @@ def file_to_lists(path, labels):
     total_pattern = re.compile(r'f1\s*=\s*([0-9.eE+\-]+)')
     label_patterns = {
         label: re.compile(
-            rf'Label:\s*{re.escape(label)}\s*\|\s*TP:\s*(\d+)\s*\|\s*FP:\s*(\d+)\s*\|\s*TN:\s*(\d+)\s*\|\s*FN:\s*(\d+)'
+            rf'Label:\s*{re.escape(label)}\s*\|\s*TP:\s*(\d+)\s*\|\s*FP:\s*(\d+)\s*\|\s*FN:\s*(\d+)' # \s*TN:\s*(\d+)\s*\|
         )
         for label in labels
     }
@@ -33,7 +34,7 @@ def file_to_lists(path, labels):
             for label, pat in label_patterns.items():
                 m_label = pat.search(block)
                 if m_label:
-                    TP, FP, _, FN = map(int, m_label.groups())
+                    TP, FP, FN = map(int, m_label.groups())
                     # Compute precision and recall
                     precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
                     recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
@@ -60,9 +61,10 @@ def main():
     plt.plot(sents, total_scores, linestyle = "--", alpha = 0.5, label = "Total F1")
     for lbl in labels:
         plt.plot(sents, indiv_scores[lbl], linestyle = "-", label = f"F1: {lbl}")
-    plt.title("Total and Per-Label F1 vs Number of Sentences")
-    plt.xlabel("Number of Sentences")
+    plt.title("Total and Individual Span F1 vs Number of Sentences")
+    plt.xlabel("Number of Sentences (in thousands)")
     plt.ylabel("F1 Score")
+    plt.xticks(np.arange(0, max(sents), step = 1000), labels = [str(i//1000) for i in range(0, max(sents), 1000)])
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
@@ -71,4 +73,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python scores_plot2.py --file product_1_10_s.txt --labels "product-car,product-weapon"
+# python scores_plot2_span.py --file product_1_10_s.txt --labels "product-car,product-weapon"

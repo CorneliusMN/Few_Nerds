@@ -60,9 +60,10 @@ def main():
     plt.plot(sents, total_scores, linestyle = "--", alpha = 0.5, label = "Total F1")
     for lbl in labels:
         plt.plot(sents, indiv_scores[lbl], linestyle = "-", label = f"F1: {lbl}")
-    plt.title("Total and Per-Label F1 vs Number of Sentences")
+    plt.title("Total and Individual Span F1 vs Number of Sentences")
     plt.xlabel("Number of Sentences")
     plt.ylabel("F1 Score")
+    
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
