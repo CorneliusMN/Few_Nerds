@@ -54,6 +54,30 @@ def set_seed(args):
     if args.n_gpu > 0:
         torch.cuda.manual_seed_all(args.seed)
 
+def per_label_confusion_counts(pred_list, label_list, metric):
+    """
+    Uses __get_class_span_dict__ from metric to compute TP, FP, FN per entity label.
+    """
+    from collections import defaultdict
+
+    tp_dict = defaultdict(int)
+    fp_dict = defaultdict(int)
+    fn_dict = defaultdict(int)
+
+    for pred_tags, label_tags in zip(pred_list, label_list):
+        pred_spans = metric.__get_class_span_dict__(pred_tags, is_string=True)
+        label_spans = metric.__get_class_span_dict__(label_tags, is_string=True)
+
+        all_labels = set(pred_spans.keys()) | set(label_spans.keys())
+        for label in all_labels:
+            pred_set = set(pred_spans.get(label, []))
+            label_set = set(label_spans.get(label, []))
+            tp_dict[label] += len(pred_set & label_set)
+            fp_dict[label] += len(pred_set - label_set)
+            fn_dict[label] += len(label_set - pred_set)
+
+    return tp_dict, fp_dict, fn_dict
+
 def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
     """ Train the model """
     # if args.local_rank in [-1, 0]:
@@ -244,6 +268,25 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
         for key in sorted(results.keys()):
             writer.write("{} = {}\n".format(key, str(results[key])))
             writer.write("\n")
+    tp_dict, fp_dict, fn_dict = per_label_confusion_counts(preds_list, out_label_list, metric)
+
+    with open(args.output_file_name, "a") as writer:
+        writer.write("\n***** Per-Label Confusion Matrix *****\n")
+        
+        # Iterate over all tags (entity labels) sorted
+        for tag in sorted(set(tp_dict) | set(fp_dict) | set(fn_dict)):
+            tp = tp_dict.get(tag, 0)
+            fp = fp_dict.get(tag, 0)
+            fn = fn_dict.get(tag, 0)
+            
+            # Logging using the logger (optional)
+            logger.info("Label: %s | TP: %d | FP: %d | FN: %d", tag, tp, fp, fn)
+            
+            # Writing the results to the output file
+            writer.write("Label: {} | TP: {} | FP: {} | FN: {}\n".format(
+                tag, tp, fp, fn
+            ))
+        writer.write("\n")
 
 
     return results, preds_list
