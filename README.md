@@ -1,4 +1,4 @@
-### Few_Nerds
+# Few_Nerds
 
 ### train_demo.py
 python3 train_demo.py --N 1 --trainN 1 --K 1 --Q 1 --use_sampled_data --prefix combined --train_iter 2075 --val_step 10 --val_iter 450 --output_file_name combined_1_1.txt
